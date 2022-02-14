@@ -1,0 +1,782 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sustainable Healthcare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="child_development.css">
+    <!-- <link rel="stylesheet" href="navfoot.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@250&family=The+Nautigal&display=swap"
+        rel="stylesheet"> -->
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #heading {
+            background-image: url('img-2.jpg');
+            color: white;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 450px;
+            opacity: 0.8;
+            text-align: center;
+        }
+
+        #heading h2 {
+            font-size: 100px;
+            font-weight: 80;
+            padding-top: 12%;
+        }
+
+        .top {
+            padding: 4%;
+            font-size: 28px;
+        }
+
+        .top h4 {
+            font-size: 28px;
+            text-align: center;
+            color: #149646;
+        }
+
+        .top p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .end {
+            padding: 4%;
+            font-size: 20px;
+
+        }
+
+        .end h2 {
+            color: #149646;
+            text-align: center;
+        }
+
+        .section-container .columns.content .content-container h5 {
+            font-size: 28px;
+
+            text-decoration: underline;
+        }
+
+        .section-container .columns.content .content-container {
+            font-size: 20px;
+
+        }
+
+
+        /* Subscribe */
+
+        .subscribe {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subscribebtn:hover {
+            background-color: #0f9c0f;
+            border: none;
+        }
+
+        .subscribebtn {
+            background-color: rgb(15, 179, 15);
+            color: white;
+            border: none;
+        }
+
+        .inptfld {
+            border-radius: 20px;
+            padding: 5px;
+            width: 20%;
+
+        }
+
+        .subscribebtn {
+            border-radius: 20px;
+            border: none;
+            padding: 5px;
+        }
+
+        .important .whole-body {
+            padding: 10%;
+
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        .important {
+            /* margin: 2.5%; */
+            /* box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px 0px; */
+            /* margin-top: 27px; */
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+
+        }
+
+        .section-container {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .section-container .columns {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        .section-container .columns.image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .section-container .columns.content .content-container {
+            padding: 40px 50px;
+        }
+
+        .section-container .columns.content .content-container h5 {
+            font-weight: 700;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .section-container .columns.content .content-container p {
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        @media screen and (max-width:767px) {
+            .section-container {
+                flex-flow: row wrap;
+            }
+
+            .section-container .columns.image {
+                display: block;
+                order: 1;
+                width: 100%;
+                height: 250px;
+            }
+
+            .section-container .columns.content {
+                display: block;
+                order: 2;
+                width: 100%;
+            }
+
+            .section-container .columns.content .content-container {
+                padding: 20px 5px;
+            }
+
+            .section-container .columns.content .content-container h5 {
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (min-width:300px) {
+            .important #heading h2 {
+                word-wrap: break-word;
+                font-size: 4rem;
+
+            }
+        }
+
+        .important .whole-body .end p {
+            text-align: center;
+        }
+
+        /*donate-volunteer*/
+        .header-image {
+            background-image: url('../images/Donate-Volunteer.jpg');
+            width: auto;
+            height: 460px;
+            opacity: 1;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(255, 255, 255);
+            min-height: 150px;
+            /*transform: translate3d(0px, -80.5809px, 0px);*/
+            margin-top: 2%;
+            margin-bottom: 1%;
+        }
+
+        .header-text {
+            display: flex;
+            padding: 6%;
+        }
+
+        .header-text h2 {
+            font-size: 3.5rem;
+            margin-bottom: 0;
+            color: white;
+    font-weight: bold;
+
+        }
+
+        .header-text p {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .header-text .donate {
+            flex: 1;
+            padding: 2%;
+            margin-top: 6%;
+        }
+
+        .header-text .volunteer {
+            flex: 1;
+            text-align: right;
+            padding: 2%;
+            margin-top: -5%;
+        }
+
+
+        .header-text button {
+            padding: 3%;
+            /* border: 3px solid white; */
+            border: none;
+            background-color: rgb(15, 179, 15);
+            color: white;
+            font-weight: bolder;
+            font-size: 1.009rem;
+        }
+
+        .header-text span {
+            color: rgb(15, 179, 15);
+            font-weight: bolder;
+        }
+
+        .header-text button:hover {
+            cursor: pointer;
+        }
+
+        @media screen and (min-width:200px) and (max-width:800px) {
+
+            .important .whole-body {
+                padding: 0%;
+            }
+        }
+
+        @media(min-width:200px) and (max-width:1000px) {
+            .header-text {
+                flex-direction: column;
+            }
+
+            .header-image {
+                height: auto;
+                margin-top:10%;
+            }
+
+            .header-text .volunteer {
+                margin-top: 8%;
+                margin-bottom: 5%;
+            }
+
+        }
+
+        .images img {
+            width: 100%;
+        }
+
+        /*donate-volunteer*/
+
+        #topbtn {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            font-size: 18px;
+            background-color: rgb(15, 179, 15);
+            cursor: pointer;
+            padding:5px 10px;
+            border-radius: 50%;
+        }
+/* 
+        @media screen and (max-device-width: 800px) {
+
+            #topbtn {
+                font-size: 2rem;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <nav class="top-navbar navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" style="padding-left: 5%" href="../index.html">
+                <img src="../images/Medlife-Foundation-Reg-Logo.png" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                            About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../Home.html">Mission and Vision</a>
+                            <a class="dropdown-item" href="../awards.html">Awards and Accolades</a>
+                            <a class="dropdown-item" href="../financial.html">Financial and Report</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                            What we do?</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="sustainablemenstruation.html">Sustainable Menstruation</a>
+                            <a class="dropdown-item" href="healthcare.html">Sustainable Healthcare</a>
+                            <a class="dropdown-item" href="womenempowerment.html">Women Empowerment</a>
+                            <a class="dropdown-item" href="child_development.html">Child Development</a>
+                            <a class="dropdown-item" href="social_entrepreneurship.html">Social Entrepreneurship and
+                                Livelihood</a>
+                            <a class="dropdown-item" href="new-environment.html" style="color: black;">Environment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../VolunteerForm.html" style="color: black;">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../team_section.html" style="color: black;">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog.html" style="color: black;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../gallery/galleery.html" style="color: black;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="donatebutton" href="../occ.html">Donate Now</a>
+                    </li>
+                    <li>
+
+                        <form action="" class="search-bar">
+                            <input type="search" name="search" pattern=".*\S.*" required>
+                            <button class="search-btn" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="important">
+
+        <!-- 
+        <div id="heading">
+
+            <!-- <h2>SUSTAINABLE HEALTHCARE</h2>
+
+        </div>  -->
+
+        <div class="images">
+            <img src="../images/Partner and supporter.png" alt="" srcset="">
+        </div>
+
+        <section class="whole-body"><br>
+            <h1 style="text-align: center;font-weight: bold;">SUSTAINABLE HEALTHCARE</h1>
+            <div class="top">
+
+
+                <p>
+
+                    The Sustainable Healthcare System is a system which improves, maintains and restores Health
+                    while minimizing
+                    Negative Impacts on the Environment and increasing the opportunities
+                    to restore and improve it for the
+                    well-being of current and future generation.
+
+
+                </p>
+            </div>
+
+            <div class="section-container">
+                <div class="columns image" style="background-image:url('../images/img-1.jpg')">
+                    &nbsp;
+                </div>
+
+                <div class="columns content">
+                    <div class="content-container">
+                        <h5>Heart Disease</h5>
+                        <p>
+                        <ul>
+                            <li> Heart disease is the leading cause of death for people.</li>
+                            <li>People may have more subtle symptoms of a heart
+                                attack such as upper abdominal pain, lightheadedness or fatigue.</li>
+                            <li>All people around the world are facing the threat of heart disease.</li>
+                            <li>MEDLIFE FOUNDATION is working towards this direction to raise awareness
+                                about heart diseases among people in India by organizing camps to monitor risk factors
+                                like high
+                                cholesterol, high blood pressure and obesity.</li>
+                        </ul>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container">
+                <div class="columns content">
+                    <div class="content-container">
+                        <h5>Diabetes</h5>
+                        <p>
+                        <ul>
+                            <li> Diabetes can lead to serious and costly complications, including heart disease, stroke,
+                                amputations,
+                                blindness and kidney disease.</li>
+                            <li>Women are also likely to develop diabetes during pregnancy.</li>
+                            <li>We organize
+                                various camps to monitor blood glucose level and other risk factors like hypertension
+                                and obesity
+                            </li>
+
+                        </ul>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="columns image" style="background-image:url('../images/img-2.jpg')">
+                    &nbsp;
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container">
+                <div class="columns image" style="background-image:url('../images/img-3.jpg')">
+                    &nbsp;
+                </div>
+                <div class="columns content">
+                    <div class="content-container">
+                        <h5>Healthcare</h5>
+                        <p>
+                        <ul>
+                            <li>It is a disease which is caused by an uncontrolled division of abnormal cells in a part
+                                of human body
+                                and destroy body tissues.</li>
+                            <li>The fact that more number of women have cancer than men in India, reverses the global
+                                trend which sees a
+                                25% higher cancer incidence of men than women.</li>
+                            <li>Breast cancer, cervical, ovarian and uterine cancers account for 70 percent of cancer
+                                cases among women
+                                in India.</li>
+                            <li>Breast cancer accounts for 27 percent of all cases among women and about 10 percent of
+                                them
+                                are inherited.</li>
+                            <li><b> BREAST CANCER</b> - A cancer that forms in the cells of breasts (chest region)</li>
+                            <li><b>CERVICAL CANCER </b> - A cancer which occurs in the lowermost part of Uterus or
+                                Cervix region.</li>
+                            <li><b>OVARIAN CANCER</b> - A cancer which occurs in the female reproductive organ i.e.
+                                Ovaries which produces eggs.</li>
+                            <li><b>UTERINE CANCER</b> - A type of cancer that begins in the Uterus.</li>
+                            <li><b>LEUKAEMIA</b> - A cancer of blood-forming tissues, which prevents the body’s ability
+                                to fight infection.</li>
+                            <li><b>PROSTATE CANCER</b> - A cancer in a male’s prostate which produces SEMINAL FLUID
+                                What makes it more dangerous for people is mainly the lack of awareness and reluctance
+                                to visit the
+                                doctor.</li>
+                        </ul>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container">
+                <div class="columns content">
+                    <div class="content-container">
+                        <h5>Anemia</h5>
+                        <p>
+                        <ul>
+                            <li>It is a condition in which the blood doesn’t have enough Healthy Red Blood Cells or
+                                Lacks no. of Red Blood Cells i.e. Lacks Hemoglobin in the Blood</li>
+
+
+                        </ul>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="columns image" style="background-image:url('../images/img-4.jpg')">
+                    &nbsp;
+                </div>
+            </div>
+
+
+
+            <div class="end">
+                <h2>PREVENTIVE HEALTH CHECK- UPS</h2>
+                <p>“Prevention is better than Cure”</h5>
+                    Preventive Healthcare or Prophylaxis are a series of Medical Tests undertaken to understand the
+                    measures needed to prevent a disease.
+                    MEDLIFE FOUNDATION has organized several health check-up camps for screening and monitoring of women
+                    health
+                    including blood pressure monitoring, mammograms, blood glucose level checkup and raising awareness
+                    about
+                    cervical cancer and that it is mainly caused by an HPV infection and is preventable.<br>
+                    Various camps have been organized:<br>
+                    <a href="../gallery/galleery.html">Click here for detail</a> <br>
+                    Active participation of the volunteers at MEDLIFE FOUNDATION had gone a long way in raising
+                </p>
+            </div>
+
+        </section>
+
+    </section>
+    <div class="header-image">
+        <div class="header-text">
+            <div class="donate">
+                <h2>Donate <span>Online!</span></h2>
+                <p>Donate to make a difference. Get 50% tax exemption on your donations and help us create a better
+                    future for India.</p>
+                <a href="../occ.html" target="_blank"><button>DONATE NOW</button></a>
+                </button>
+
+
+            </div>
+            <div class="volunteer">
+                <h2>Become a <span>Volunteer</span></h2>
+                <p>Medlife Foundation volunteers are self-motivated people of all ages and from different walks of life
+                    who give of their time and resources to make positive difference in the lives of children.</p>
+                <a href="../VolunteerForm.html" target="_blank"> <button>JOIN TODAY</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUBSCRIBE -->
+
+    <div class="subscribe">
+        <h1 style="font-weight: bolder;"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Join our community
+        </h1>
+        <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+        <input style="margin-top: 5px;" class="subscribebtn" value="Subscribe Now!" type="submit">
+    </div><br>
+
+
+    <!-- topbutton  -->
+    <div id="topbtn">
+        <a href="#" style="color:white"><i class="fa fa-arrow-up" aria-hidden="true"></i> </a>
+    </div>
+    <!-- topbutton  -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331;width: 100%;">
+
+            <!-- Section: Links  -->
+            <section class="" style="padding:1%;">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Medlife Foundation</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Medlife Foundation strives to work towards finding Effective Healthcare Solutions to the
+                                problems
+                                faced by people who are not privileged by spreading awareness on Sustainable
+                                Menstruation and
+                                Development of Children belonging to a weaker section of society. ....<br>
+                                <a href="../timeline.html">Learn more</a>
+                            </p>
+
+
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">Quick links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="../timeline.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp About us</a>
+                            </p>
+
+                            <!-- <p>
+                                <a href="#portfolio" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp What we do?</a>
+                            </p> -->
+                            <p>
+                                <a href="../occ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Donate</a>
+                            </p>
+                            <p>
+                                <a href="../contact.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Contact us</a>
+                            </p>
+                            <p>
+                                <a href="../FAQ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    FAQ</a>
+                            </p>
+                            <p>
+                                <a href="../gallery/media.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Media</a>
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px;">
+
+                            <p>
+                                <a href="../career.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Career</a>
+                            </p>
+                            <!-- <p>
+                                <a href="#!" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>
+                                    Gallery</a>
+                            </p> -->
+                            <p>
+                                <a href="../partnersandsupporters.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Partners &
+                                    supporters</a>
+                            </p>
+                            <p>
+                                <a href="../InternshipForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Apply for Internship</a>
+                            </p>
+                            <p>
+                                <a href="../corporatepartnership.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Corporate partnership</a>
+                            </p>
+                            <p>
+                                <a href="../VolunteerForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Be a Volunteer</a>
+                            </p>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p> <a href="tel:827-532-0465" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Bhushan :+91 82753 20465</a></p>
+
+                            <p><a href="tel:997-005-4699" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Sandeep : +91 99700 54699</a></p>
+                            <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Dr.Bhushan : +91 93073 99492</a></p>
+                            <!-- <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i> Dr.Bhushan : +91 93073 99492</a></p>                  -->
+                            <p><a href="mailto:info@medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-envelope mr-3"></i>&nbsp
+                                    info@medlifefoundation.org</a> </p>
+                            <p><a href="www.medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-globe"></i>&nbsp
+                                    www.medlifefoundation.org</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Copyright -->
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <div id="socialicon">
+                    <p>SHOW US SOME &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>&nbsp; ON
+                        SOCIAL MEDIA</p>
+
+                    <a href="https://www.facebook.com/medlifefoundationbahal" target="_blank" class="text-white">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/Med_foundation" target="_blank" class="text-white">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="Home.html" target="_blank" class="text-white">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/medlifefoundation/" target="_blank" class="text-white ">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/MedlifeFoundation" target="_blank" class="text-white">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/medlife-foundation" target="_blank" class="text-white ">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                </div><br>
+                © 2016-2022 Copyright:&nbsp;
+                <a class="text-white" href="../index.html">Medlifefoundation </a>|
+                <a class="text-white" href="../privacy.html">Privacy Policy</a>|
+                <a class="text-white" href="../terms.html">Terms & Conditions</a>|
+                <a class="text-white" href="../refund.html">Refund Policy</a>
+
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- scriptlinks -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

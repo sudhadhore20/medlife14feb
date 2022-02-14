@@ -1,0 +1,277 @@
+.top-navbar{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+/* 
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-size: 20px;
+  transition: .5s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-item a {
+  font-size: large;
+  color: black;
+} */
+.nav-item a:hover{
+  text-decoration: none;
+}
+.navbar-nav {
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+  border: none;
+  /* background: transparent; */
+}
+
+
+/* navbar */
+/*
+.top-navbar{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-size: 20px;
+    transition: .5s ease-in-out;
+  }
+  
+  .nav-item a {
+    /* font-size: large; 
+    color: black;
+  }
+
+  .nav-item a:hover {
+    text-decoration: none;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    padding-right: 10px;
+  }
+  
+  .navbar-brand img{
+    width:230px;
+     height:70px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    border: none;
+    /* background: transparent; 
+  }*/
+/*   
+  *{  
+      margin: 0%;
+      padding: 0%;
+      font-family:'Times New Roman', Times, serif; 
+  } */
+
+  
+/* instagram */
+  /* .instagram{
+    text-align: center;
+    padding: 1em;
+}
+
+.instagram h1{
+    color: green;
+    margin-top: 0;
+}
+
+.instagram a{
+    border-radius: 5px;
+    color: white;
+    background: green;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.instagram a:hover{
+    background: rgb(6, 95, 6);
+} */
+
+/* Subscribe */
+
+.subscribe{
+  text-align: center;
+  padding: 20px;
+}
+.subscribebtn:hover{
+  background-color:#0f9c0f;
+  border: none;
+}
+
+.subscribebtn{
+  background-color:rgb(15,179,15);
+  color: white;
+  border: none;
+}
+.inptfld{
+  border-radius: 20px;
+  padding: 5px;
+  width: 20%;
+
+}
+ .subscribebtn{
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+}
+
+/* 
+#subscribe-footer{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+     box-shadow: 9px 5px 10px 5px rgb(7, 7, 7);
+  }
+  
+  #subscribe-footer .flex-item-left, .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  #subscribe-footer .flex-item-right{
+    margin-top: -15px;
+    text-align: end;
+    padding: 20px;
+    padding-top: 40px;
+    float: right;
+  }
+  #subscribe-footer .inptfld, .subscribebtn{
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+  }
+  
+  #subscribe-footer .subscribebtn{
+    background-color:#07b107;
+    color: white;
+    border: none;
+  }
+  
+  .subscribebtn:hover{
+    background-color:#28d928;
+    border: none;
+  }
+  
+   
+  @media (max-width: 700px) {
+    #subscribe-footer .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+    #subscribe-footer .flex-item-right{
+      margin-top: -50px;
+      text-align:center;
+    }
+    #subscribe-footer .flex-item-left{
+      margin-top: 2px;
+      text-align:center;
+  }
+  }
+*/
+
+  /* footer */
+.footer .me-5 {
+    text-align:left;
+  }
+
+  .footer p{
+    margin-bottom: 1rem;
+  }
+  .footer #socialicon .text-white{
+    margin-right:0.5rem ;
+  } 
+  .footer #socialicon a {
+    text-decoration: none;
+  }
+  
+  .footer #socialicon i{
+    text-align: left;
+    font-size: large;
+  }
+  
+  .footer a{
+    text-decoration: none;
+  }
+
+  @media screen and (min-device-width: 200px) and (max-device-width: 800px) {
+    /* .navbar-light .navbar-nav .nav-link {
+      color: black;
+      font-size: 3rem;
+      transition: .5s ease-in-out;
+    }
+    
+    .nav-item a {
+      font-size: 3rem;
+      color: black;
+      padding-left:70px;
+    } */
+   
+  
+    /* .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 50px;
+  }
+    .nav-item a {
+      font-size: 3rem;
+  } */
+    /* .navbar-light .navbar-toggler{
+      font-size: xxx-large;
+    } */
+
+  .col-md-2 {
+      flex: 0 0 auto;
+      width: 100%;
+      text-align: center;
+      font-size: 2.5rem;
+  }
+  
+  .col-md-3 {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .col-md-4 {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer h6{
+  font-size: 2.5rem;
+  }
+  
+  .footer .me-5{
+    font-size: 2.5rem;
+  }
+  .footer #socialicon{
+    font-size: 2.5rem;
+  }
+  .footer #socialicon i{
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  
+  .footer .text-center {
+    font-size: 2.5rem;
+  }
+
+  .subscribe .inptfld
+  {
+    width: 50%;
+    height: 50px;
+  }
+  
+  .subscribe .subscribebtn{
+    width:fit-content;
+    height: 50px;
+  }
+  
+  } 

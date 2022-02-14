@@ -1,0 +1,1074 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog-1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Girls Experience</title>
+    <style>
+        #donatebutton {
+            background-color: rgb(15, 179, 15);
+            width: fit-content;
+            color: honeydew;
+            border-radius: 10px;
+            margin-left: 8px;
+            padding-right: 8px;
+
+        }
+
+        #donatebutton:hover {
+            /* background-color: #7bdb7b; */
+            box-shadow: 0px 10px 10px #0f9c0f;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .top-navbar {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+            font-size: 20px;
+            transition: .5s ease-in-out;
+        }
+
+        .nav-item a {
+            font-size: large;
+            color: black;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            padding-right: 10px;
+        }
+
+        .navbar-brand img {
+            width: 230px;
+            height: 70px;
+        }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu {
+            border: none;
+            /* background: transparent; */
+        }
+
+
+
+        /* Subscribe */
+
+        .subscribe {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subscribebtn:hover {
+            background-color: #0f9c0f;
+            border: none;
+        }
+
+        .subscribebtn {
+            background-color: rgb(15, 179, 15);
+            color: white;
+            border: none;
+        }
+
+        .inptfld {
+            border-radius: 20px;
+            padding: 5px;
+            width: 20%;
+
+        }
+
+        .subscribebtn {
+            border-radius: 20px;
+            border: none;
+            padding: 5px;
+        }
+
+        /* footer */
+        .footer #socialicon a {
+            text-decoration: none;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .footer #socialicon .text-white {
+            margin-right: 0.5rem;
+        }
+
+
+        .footer #socialicon i {
+            text-align: left;
+            font-size: large;
+        }
+
+
+
+        /*body*/
+        .top {
+            padding: 4%;
+            font-size: 18px;
+            padding-bottom: 0%;
+            margin-bottom: -4%;
+        }
+
+        .top h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: rgb(15, 179, 15);
+            font-weight: bold;
+        }
+
+        .top h4 {
+            font-size: 28px;
+            text-align: center;
+            color: rgb(15, 179, 15);
+
+        }
+
+        .top p {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 2%;
+
+        }
+
+        .end {
+            padding: 4%;
+            font-size: 18px;
+            padding-top: 0%;
+            margin-top: -7%
+        }
+
+        .end h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+
+
+        .section-container1 .columns.content .content-container h5,
+        .section-container2 .columns.content .content-container h5,
+        .section-container3 .columns.content .content-container h5,
+        .section-container4 .columns.content .content-container h5 {
+            font-size: 28px;
+
+            text-decoration: underline;
+        }
+
+        .section-container1 .columns.content .content-container,
+        .section-container2 .columns.content .content-container,
+        .section-container3 .columns.content .content-container,
+        .section-container4 .columns.content .content-container {
+            font-size: 18px;
+
+        }
+
+
+
+        .important .whole-body {
+            padding: 5%;
+
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        body {
+            overflow-x: hidden;
+
+        }
+
+        .section-container1,
+        .section-container2,
+        .section-container3,
+        .section-container4 {
+            --bs-gutter-x: 1rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            /* margin-top: -6%; */
+            /* flex-wrap: wrap; */
+        }
+
+        .section-container1 .columns,
+        .section-container2 .columns,
+        .section-container3 .columns,
+        .section-container4 .columns {
+            flex: 0 0 auto;
+            width: 50%;
+            padding: 70px 50px;
+        }
+
+        .section-container1 .columns.image,
+        .section-container2 .columns.image,
+        .section-container3 .columns.image,
+        .section-container4 .columns.image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: revert;
+        }
+
+        .section-container1 .columns.content .content-container,
+        .section-container2 .columns.content .content-container,
+        .section-container3 .columns.content .content-container,
+        .section-container4 .columns.content .content-container {
+            padding: 40px 10px;
+        }
+
+        .section-container1 .columns.content .content-container h5,
+        .section-container2 .columns.content .content-container h5,
+        .section-container3 .columns.content .content-container h5,
+        .section-container4 .columns.content .content-container h5 {
+            font-weight: 700;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .section-container1 .columns.content .content-container p,
+        .section-container2 .columns.content .content-container p,
+        .section-container3 .columns.content .content-container p,
+        .section-container4 .columns.content .content-container p {
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-bottom: 15px;
+            text-align: justify;
+
+        }
+
+        .section-container4 .columns.content .content-container span,
+        .section-container2 .columns.content .content-container span,
+        .section-container3 .columns.content .content-container span,
+        .section-container4 .columns.content .content-container {
+
+            font-size: 1.5rem;
+        }
+
+        @media screen and (min-width:200px) and (max-width:800px) {
+            .navbar-light .navbar-nav .nav-link {
+                color: black;
+                font-size: 1rem;
+                transition: .5s ease-in-out;
+                padding-left: 5px;
+            }
+
+            .nav-item a {
+                font-size: 0.9rem;
+                color: black;
+            }
+
+
+            .footer h6 {
+                font-size: 1rem;
+            }
+
+            .subscribe .inptfld {
+                width: 50%;
+                height: 50px;
+            }
+
+            .subscribe .subscribebtn {
+                width:fit-content;
+                height: 50px;
+            }
+
+
+            .section-container2,
+            .section-container4 {
+                flex-direction: column-reverse;
+            }
+
+            .section-container1,
+            .section-container3 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section-container1 .columns.image,
+            .section-container2 .columns.image,
+            .section-container3 .columns.image,
+            .section-container4 .columns.image {
+                /* 
+  order:1; */
+                width: 100%;
+                height: 250px;
+            }
+
+            .section-container1 .columns.content,
+            .section-container2 .columns.content,
+            .section-container3 .columns.content,
+            .section-container4 .columns.content {
+                /* display:block;
+  order:2; */
+                width: 100%;
+            }
+
+
+
+            .section-container1 .columns.content .content-container h5,
+            .section-container2 .columns.content .content-container h5,
+            .section-container3 .columns.content .content-container h5,
+            .section-container4 .columns.content .content-container h5 {
+                margin-bottom: 5px;
+            }
+            .end h1{
+                font-size: 35px;
+            }
+
+        }
+
+
+
+        @media (min-width:200px) and (max-width:1200px) {
+            .important .whole-body {
+                padding: 1%;
+            }
+
+            .section-container1 .columns.content .content-container,
+            .section-container2 .columns.content .content-container,
+            .section-container3 .columns.content .content-container,
+            .section-container4 .columns.content .content-container {
+                padding: 20px 5px;
+            }
+
+            .section-container1 .columns,
+            .section-container2 .columns,
+            .section-container3 .columns,
+            .section-container4 .columns {
+                padding: 70px 4%;
+            }
+        }
+
+        /*donate-volunteer*/
+        .header-image {
+            background-image: url('images/Donate-Volunteer.jpg');
+            width: auto;
+            height: 460px;
+            opacity: 1;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(255, 255, 255);
+            min-height: 150px;
+            /*transform: translate3d(0px, -80.5809px, 0px);*/
+            margin-top: 2%;
+            margin-bottom: 1%;
+        }
+
+        .header-text {
+            display: flex;
+            padding: 6%;
+        }
+
+        .header-text h2 {
+            font-size: 3.5rem;
+            margin-bottom: 0;
+            color: white;
+            font-weight: 700;
+        }
+
+        .header-text p {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .header-text .donate {
+            flex: 1;
+            padding: 2%;
+            margin-top: 6%;
+        }
+
+        .header-text .volunteer {
+            flex: 1;
+            text-align: right;
+            padding: 2%;
+            margin-top: -5%;
+        }
+
+        .header-text button {
+            padding: 3%;
+            /* border: 3px solid white; */
+            border: none;
+            background-color: rgb(15, 179, 15);
+            color: white;
+            font-weight: bolder;
+            font-size: 1.009rem;
+        }
+
+        .header-text span {
+            color: rgb(15, 179, 15);
+            font-weight: bolder;
+        }
+
+        .header-text button:hover {
+            cursor: pointer;
+        }
+
+
+        @media(min-width:200px) and (max-width:1000px) {
+            .header-text {
+                flex-direction: column;
+            }
+
+            .header-image {
+                height: auto;
+                margin-top: 10%;
+            }
+
+            .header-text .volunteer {
+                margin-top: 8%;
+                margin-bottom: 5%;
+            }
+
+        }
+
+        /*donate-volunteer*/
+
+        /***COMMENT-BOX***/
+        .comment-box {
+            width: 500px;
+            padding: 2.5%;
+            margin-top: -4%;
+            margin: auto;
+            margin-top: -2%
+        }
+
+        .comment-box form textarea {
+            border: 1px solid gray;
+            border-radius: 6px;
+            padding: 4%;
+            font-size: 18px;
+            /* box-sizing: border-box;
+            width:100%; */
+        }
+
+        .comment-box form .comment-button {
+            padding: 14px 14px;
+            border: none;
+            background-color: rgb(15, 179, 15);
+            border-radius: 6px;
+            font-size: 1.2rem;
+            color: white;
+            margin-top: -3%;
+        }
+
+        @media (min-width:200px) and (max-width:1200px) {
+            .comment-box {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .comment-box form textarea {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media(min-width:250px) and (max-width:400px) {
+            .comment-box form .comment-button {
+                margin-top: -6%;
+            }
+        }
+
+        @media(min-width:700px) and (max-width:900px) {
+            .comment-box form .comment-button {
+                margin-top: -2%;
+            }
+        }
+
+        @media(min-width:900px) and (max-width:1280px) {
+            .comment-box form .comment-button {
+                margin-top: -2%;
+            }
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .last {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .last p {
+            padding: 0px;
+            margin: 0;
+        }
+        
+#topbtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  background-color: rgb(15, 179, 15);
+  cursor: pointer;
+  padding:10px 10px;
+  border-radius: 50%;
+}
+
+/* 
+@media screen and (max-device-width: 800px){
+
+  #topbtn {
+    font-size: 2rem;
+  }
+} */
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="top-navbar navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" style="padding-left: 5%" href="index.html">
+                <img src="images\Medlife-Foundation-Reg-Logo.png" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Home.html">Mission and Vision</a>
+                            <a class="dropdown-item" href="awards.html">Awards and Accolades</a>
+                            <a class="dropdown-item" href="financial.html">Financial and Report</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            What we do?</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="causes/sustainablemenstruation.html">Sustainable
+                                Menstruation</a>
+                            <a class="dropdown-item" href="causes/healthcare.html">Sustainable Healthcare</a>
+                            <a class="dropdown-item" href="causes/womenempowerment.html">Women Empowerment</a>
+                            <a class="dropdown-item" href="causes/child_development.html">Child Development</a>
+                            <a class="dropdown-item" href="causes/social_entrepreneurship.html">Social Entrepreneurship
+                                and
+                                Livelihood</a>
+                            <a class="dropdown-item" href="causes/new-environment.html">Environment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VolunteerForm.html">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team_section.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery/galleery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="donatebutton" href="occ.html">Donate Now</a>
+                    </li>
+                    <li>
+
+                        <form action="" class="search-bar">
+                            <input type="search" name="search" pattern=".*\S.*" required>
+                            <button class="search-btn" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section class="important">
+        <section class="whole-body">
+            <div class="top">
+
+                <h2>Mood disorder</h2>
+                <p>
+
+                    Mood is described as an internal feeling that affects almost every element of a person's behavior.
+                    It is a temporary state of mind. Affective disorders, often known as mood disorders. These are
+                    prevalent mental diseases that result in higher morbidity and death rates. Mood disorders are
+                    changes or abnormalities in the mood that affects the person’s ability to lead their life. Mood
+                    disorder involves a persistent feeling of either extreme sadness or extreme happiness. (Severe lows
+                    called depression or highs called hypomania or mania).
+                    According to DSM –5, mood disorders are broadly classified as bipolar disorder and depressive
+                    disorders.
+
+
+                </p>
+            </div>
+
+            <div class="section-container1">
+                <div class="columns image" style="background-image:url('images/blog11-1.jpg')">
+                    &nbsp;
+                </div>
+
+                <div class="columns content">
+                    <div class="content-container">
+                        <!-- <h5>Education</h5> -->
+                        <p>
+                            <span style="font-size:1.5rem">Depression</span><br>
+                            There is a difference between having depression and feeling depressed. Everyone feels down
+                            from time to time. But medical depression is different, it lasts for at least two
+                            consecutive weeks. <br>
+                            <span style="font-size:1.5rem">Major depressive disorder </span> <br>
+                            Depression can have lots of symptoms includes a persistent depressed mood (low mood), loss
+                            of interest in things that you normally enjoy (anhedonia), changes in appetite, feeling
+                            worthless or excessively guilty, poor concentration, Weight gain or loss, Insomnia (sleeping
+                            too little) or hypersomnia (sleeping more than 10 hours but feel unrested), restlessness or
+                            slowness, loss of energy, recurrent thoughts of suicide. The presence of 5 of the 9 symptoms
+                            of is used to diagnose. And these symptoms must last for at least two weeks.
+                            There are several other depressive disorders which are incorporated in DSM –5
+
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <!-- <div class="section-container2">
+                <div class="columns content" style="padding:50px 50px;">
+                    <div class="content-container">
+                        <h5>Child Labour and Exploitation</h5>
+                        <p>
+                            This physiological event occurs in every girl, stage where childhood to adulthood turn point
+                            known as puberty, it includes other bodily changes due to hormonal changes and control (by
+                            estrogen and progesterone) in her body. Menarche it an event when she attains her first
+                            period.
+                            Since then, the girl must be ready to meet and manage things (mental and nutritional),
+                            physical activities, social support to cope with the month. Have happy moments — a healthy,
+                            healthy body.
+
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="columns image" style="background-image:url('images/blog6-3.jpg')">
+                    &nbsp;
+                </div>
+            </div>
+            
+            <div class="section-container3">
+                <div class="columns image" style="background-image:url('images/blog6-2.jpg')">
+                    &nbsp;
+                </div>
+                <div class="columns content">
+                    <div class="content-container">
+                        <h5>Education</h5>
+                        <p style="padding-top: 20%;">
+                            Wellness policies and programs focus on women and girls' health and wellbeing. attention on
+                            important events in her life like menstruation here is a world menstrual hygiene day
+                            celebrated on may 28th every year since 2014 let her seek more support and information,
+                            significance & teach often less know girls and women’s in every corner
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div> -->
+
+
+
+
+            <div class="end">
+                <h2>Disruptive mood dysregulation disorder (DMDD) </h2>
+                <p>Disruptive mood dysregulation disorder (DMDD) is a mental disorder in children and adolescents marked
+                    by a persistently irritable or angry mood and frequent temper outbursts that are out of proportion
+                    to the situation and significantly more severe than the typical reaction of their peers of the same
+                    age.
+                    <br>
+                    <br>
+                <h2>Persistent depressive disorder (PDD) </h2>
+                Persistent depressive disorder (PDD) or dysthymia is a long-term form of depression that last for at
+                least two years in adults and one year in children and adolescents which is less severe than Major
+                depressive disorder.
+                <br>
+                <br>
+                <h2>premenstrual dysphoric disorder (PMDD)</h2>
+                The premenstrual dysphoric disorder (PMDD) undergoes rapid changes in the mood, Symptoms usually appear
+                in the last week before menstruation. Symptoms are mood swings, sudden sadness, highly irritable or
+                angry resulting in increased conflicts with family and friends, hopelessness, anxious, difficulty in
+                concentrating on everyday activities. The disorder begin to improve in a few days following the onset of
+                menstruation, and gradually disappear in the following weeks.
+                <br>
+                <br>
+                <h2>Double depression </h2>
+                The coexistence of major depressive disorder and persistent depressive disorder is referred to as double
+                depression. According to research, double depression is more severe than either MDD or PDD alone, and
+                people with double depression relapse more frequently than people with either MDD or PDD alone.
+                <br>
+                <br>
+                <h2>Bipolar</h2>
+                In old literature it is called as manic depression.
+                Bipolar I Characterized by episodes of severe mania symptoms (elevated mood with three or more of the
+                following symptoms: increased goal-directed activity, grandiosity, a diminished need for sleep,
+                distractibility, racing thoughts, increased/pressured speech, and reckless behaviors) has occurred for
+                at least one week or required hospitalization Four or more of the above-mentioned symptoms are required
+                to fulfill the fulfilled for a manic episode if the mood is irritated rather than elevated.
+                Bipolar II Characterized by episodes of hypomania (not requiring hospitalization) and severe depression
+                for at least 4 weeks.
+                <br>
+                <br>
+                <h2>Cyclothymia</h2>
+                Cyclothymia is characterized by the episode hypomania as well as mild depression for at least two years.
+                These symptoms are not sufficient for a major depressive episode or a hypomanic episode. people with
+                cyclothymia experience persistent irregular mood swings ranging from mild to moderate emotional "highs"
+                to mild to moderate emotional "lows."
+                <br>
+                <br>
+                <h2>Hypomania</h2>
+                Hypomania is a psychiatric condition characterized by an elevated or agitated mood and is frequently
+                occurs in persons with bipolar illness. Have less severe symptoms that are not serious enough to be
+                hospitalized.
+                <br>
+                <br>
+                <br>
+                <h1>What Causes mood disorder?</h1>
+                <br>
+                <h2>Biological Factors</h2>
+                serotonin and norepinephrine are the Neurotransmitters which play an important role in the mood
+                disorder. The chemical serotonin is most typically linked to depression. Dopamine has also been linked
+                to mood disorders, with studies indicating that it is lower in depression and higher in mania.
+                <br>
+                <br>
+                <h2>Medical conditions</h2>
+                Medical conditions which include:
+                Brain tumor syphilis, Delirium, Encephalitis, Influenza, Metabolic changes associated with hemodialysis,
+                Multiple sclerosis, Q fever, Cancer, AIDS, Hypothyroidism can lead to mood disorders.
+                <br>
+                <br>
+                <h2>Genetic Factors</h2>
+                People from a family with a significant positive history of mood disorders are more likely to acquire
+                themselves
+                <br>
+                <br>
+                <h2>Psychosocial Factors</h2>
+                Stressful life experiences (death of a significant other, parents, siblings, etc. ), traumatic
+                occurrences, and childhood maltreatment have all been linked to the development of mood disorders later
+                on in life, particularly depression.
+                Personality characteristics and illnesses such as borderline and obsessive-compulsive disorder (OCD) are
+                more commonly linked to depression. Depression has been linked to attachment issues and early childhood
+                suffering
+                <br>
+                <br>
+                <br>
+                <h1><i class="fa fa-stethoscope" aria-hidden="true"></i> Treatment & Medications </h1>
+                <br>
+                <h2>Pharmacotherapy for Bipolar Disorder</h2>
+                Lithium (primary mood-stabilizer), Sodium valproate, Carbamazepine, oxcarbazepine anticonvulsant
+                medications. ) Lamotrigine, Benzodiazepines, Thyroid hormone (In certain bipolar individuals,
+                triiodothyronine may help to regulate their mood) are used. <br>
+                <br>
+                <h2>Pharmacotherapy for Unipolar depression or dysthymia:</h2>
+                <br>
+                <span> • Selective serotonin reuptake inhibitors (SSRIs):</span>Sertraline, fluvoxamine, fluoxetine,
+                citalopram, escitalopram, and paroxetine. <br>
+                <span> • Serotonin-norepinephrine reuptake inhibitors (SNRI):</span>venlafaxine, desvenlafaxine,
+                duloxetine, milnacipran, and Levo milnacipran <br>
+                <span> • Atypical antidepressants</span>bupropion and mirtazapine. Agomelatine is another atypical
+                antidepressant, but it is unavailable in the United States<br>
+                <span> • Tricyclic antidepressants (TCA):</span>desipramine, nortriptyline, imipramine, and
+                amitriptyline.<br>
+                <span> • Serotonin modulators: </span>s>nefazodone, trazodone, vilazodone, and vortioxetine.<br>
+                <span> • Monoamine oxidase inhibitors (MAOIs):</span>>These include tranylcypromine, phenelzine, and
+                selegiline.<br>
+
+                <br>
+                <br>
+                <h2>Psychotherapy (talk therapy)</h2>
+                <span> • Acceptance and commitment therapy (ACT)</span>and mindfulness-based cognitive therapy (MBCT)
+                appear to be effective in reducing mood symptoms and preventing relapse. <br>
+                <span> • Interpersonal psychotherapy </span>is a type of psychotherapy that acknowledges interpersonal
+                issues and role shifts.<br>
+                <span> • Cognitive-behavioral therapy (CBT)</span>is a type of treatment that aims to alter the
+                dysfunctional thoughts and attitudes that are linked to depression. CBT is the most widely
+                &nbsp; &nbsp; researched psychotherapy for depression among psychotherapies <br>
+                <span> • Dialectical behavioral therapy (DBT) </span>is a kind of cognitive behavioral therapy (CBT)
+                that focuses on mindfulness, distress tolerance, and emotional regulation.<br>
+                <span> • Brain Stimulation Therapy</span>
+                Repetitive transcranial magnetic stimulation (rTMS) and Electroconvulsive therapy<br>
+
+                <span>Brain Stimulation Therap</span>
+                Repetitive transcranial magnetic stimulation (rTMS) and Electroconvulsive therapy <br>
+                <span>Phototherapy</span>(bright light therapy) is used in the treatment of seasonal affective disorder
+                (SAD).<br>
+                <br>
+                <h5> <span> Maintaining a healthy lifestyle. Regular exercise and yoga are protective against the
+                        development of mood disorders. </span> </h5>
+
+                </p>
+            </div>
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <!-- <br> -->
+                <form action="" id="commentbox">
+                    <label for="commentbox"></label>
+                    <textarea rows="2" cols="50" name="commentbox" placeholder="comments"></textarea>
+                    <br>
+                    <br>
+                    <!-- <input type="submit" value="Submit" class="submit"> -->
+                    <a href=""><button class="comment-button">Leave Comment</button></a>
+                </form>
+            </div>
+
+            <hr>
+            <div class="last">
+                <p><span class="material-icons" style="vertical-align: middle;">navigate_before</span><a
+                        href="blog10.html" style="text-decoration: none; color: black;">Previous Blog</a></p>
+
+                <p><a href="blog12.html" style="text-decoration: none; color: black;">Next Blog<span
+                            class="material-icons" style="vertical-align: middle;">navigate_next</span></a></p>
+            </div>
+            <hr>
+
+        </section>
+
+    </section>
+    <div class="header-image">
+        <div class="header-text">
+            <div class="donate">
+                <h2>Donate <span>Online!</span></h2>
+                <p>Donate to make a difference. Get 50% tax exemption on your donations and help us create a better
+                    future for India.</p>
+                <a href="occ.html" target="_blank"><button>DONATE NOW</button></a>
+                </button>
+
+
+            </div>
+            <div class="volunteer">
+                <h2>Become a <span>Volunteer</span></h2>
+                <p>Medlife Foundation volunteers are self-motivated people of all ages and from different walks of life
+                    who give of their time and resources to make positive difference in the lives of children.</p>
+                <a href="VolunteerForm.html" target="_blank"> <button>JOIN TODAY</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <h1 style="font-weight: bolder;"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Join our community
+        </h1>
+        <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+        <input style="margin-top: 5px;" class="subscribebtn" value="Subscribe Now!" type="submit">
+    </div><br>
+    
+   <!-- topbutton  -->
+   <div id="topbtn">
+    <a href="#" style="color:white"><i class="fa fa-arrow-up" aria-hidden="true"></i> </a>
+</div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331;width: 100%;">
+
+            <!-- Section: Links  -->
+            <section class="" style="padding:1%;">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Medlife Foundation</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Medlife Foundation strives to work towards finding Effective Healthcare Solutions to the
+                                problems
+                                faced by people who are not privileged by spreading awareness on Sustainable
+                                Menstruation and
+                                Development of Children belonging to a weaker section of society. ....<br>
+                                <a href="timeline.html">Learn more</a>
+                            </p>
+
+
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">Quick links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="timeline.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp About us</a>
+                            </p>
+
+                            <!-- <p>
+                                <a href="#portfolio" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp What we do?</a>
+                            </p> -->
+                            <p>
+                                <a href="occ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Donate</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Contact us</a>
+                            </p>
+                            <p>
+                                <a href="FAQ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    FAQ</a>
+                            </p>
+                            <p>
+                                <a href="gallery/media.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Media</a>
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px;">
+
+                            <p>
+                                <a href="career.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Career</a>
+                            </p>
+                            <!-- <p>
+                                <a href="#!" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>
+                                    Gallery</a>
+                            </p> -->
+                            <p>
+                                <a href="partnersandsupporters.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Partners &
+                                    supporters</a>
+                            </p>
+                            <p>
+                                <a href="InternshipForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Apply for Internship</a>
+                            </p>
+                            <p>
+                                <a href="corporatepartnership.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Corporate partnership</a>
+                            </p>
+                            <p>
+                                <a href="VolunteerForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Be a Volunteer</a>
+                            </p>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p> <a href="tel:827-532-0465" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Bhushan :+91 82753 20465</a></p>
+
+                            <p><a href="tel:997-005-4699" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Sandeep : +91 99700 54699</a></p>
+                            <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Dr.Bhushan : +91 93073 99492</a></p>
+                            <!-- <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i> Dr.Bhushan : +91 93073 99492</a></p>                  -->
+                            <p><a href="mailto:info@medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-envelope mr-3"></i>&nbsp
+                                    info@medlifefoundation.org</a> </p>
+                            <p><a href="www.medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-globe"></i>&nbsp
+                                    www.medlifefoundation.org</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Copyright -->
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <p>SHOW US SOME &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>&nbsp; ON SOCIAL
+                    MEDIA</p>
+
+                <div id="socialicon">
+                    <a href="https://www.facebook.com/medlifefoundationbahal" target="_blank" class="text-white">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/Med_foundation" target="_blank" class="text-white">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="Home.html" target="_blank" class="text-white">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/medlifefoundation/" target="_blank" class="text-white ">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/MedlifeFoundation" target="_blank" class="text-white">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/medlife-foundation" target="_blank" class="text-white ">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                </div><br>
+                © 2016-2022 Copyright:&nbsp;
+                <a class="text-white" href="index.html">Medlifefoundation </a>|
+                <a class="text-white" href="privacy.html">Privacy Policy</a>|
+                <a class="text-white" href="terms.html">Terms & Conditions</a>|
+                <a class="text-white" href="refund.html">Refund Policy</a>
+
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- scriptlinks -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

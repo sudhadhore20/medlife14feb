@@ -1,0 +1,1045 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="navfoot.css"> -->
+    <meta name="viewport" content="width=device-width,scale=1.0">
+    <link rel="stylesheet" href="FAQ.css">
+    <title>FAQ</title>
+    <style>
+        #donatebutton {
+            background-color: rgb(15, 179, 15);
+            width: fit-content;
+            color: honeydew;
+            border-radius: 10px;
+            margin-left: 8px; padding-right: 8px;
+        }
+
+        #donatebutton:hover {
+            /* background-color: #7bdb7b; */
+            box-shadow: 0px 10px 10px #0f9c0f;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .ban{
+            /* border: 2px solid red; */
+            align-items: center;
+            margin-left: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .ban a{
+            text-decoration: none;
+            color: #fff;
+            /* display: flex; */
+            text-align: center;
+            padding: 8px;
+            background-color: #0f9c0f;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+
+:root {
+  --color-text: hsl(248, 10%, 40%);
+  --color-text-muted: hsl(248, 10%, 40%);
+  --color-purple: rgb(15, 179, 15);
+}
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+  color: var(--color-text);
+  background: hsl(248, 53%, 95%);
+  font-family: "Hind", sans-serif;
+} */
+.accordion {
+  width: 100%;
+  padding: 1.2rem 0;
+  border-radius: 1rem;
+  background: white;
+/*   box-shadow: 0 0 5rem lightgrey; */
+}
+
+.accordion__heading {
+  margin-bottom: 1rem;
+  padding: 0 1.4rem;
+}
+
+.accordion__item:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+
+.accordion__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background: white;
+  border: none;
+  outline: none;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.accordion__btn:hover {
+  color: var(--color-purple);
+  background: hsl(248, 53%, 97%);
+}
+
+.accordion__item--active .accordion__btn {
+  color: var(--color-purple);
+  border-bottom: 2px solid var(--color-purple);
+  background: hsl(248, 53%, 97%);
+}
+
+.fa-lightbulb {
+  padding-right: 1rem;
+}
+.accordion__icon {
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+  opacity: 0.9;
+}
+.accordion__item--active .accordion__icon {
+  transform: rotate(135deg);
+}
+
+.accordion__content {
+  font-weight: 300;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  color: var(--color-text-muted);
+  transform: translateX(16px);
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+}
+.accordion__content p {
+  padding: 1rem 1.8rem;
+}
+
+.accordion__item--active .accordion__content {
+  opacity: 1;
+  transform: translateX(0px);
+  max-height: 100vh;
+}
+
+        @media(max-width:800px){
+            .ban a{
+                margin: auto;
+                padding: 5px;
+            }
+            /* .ban{
+                margin: auto;
+            } */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <nav class="top-navbar navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" style="padding-left: 5%" href="index.html">
+                <img src="images\Medlife-Foundation-Reg-Logo.png" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Home.html">Mission and Vision</a>
+                            <a class="dropdown-item" href="awards.html">Awards and Accolades</a>
+                            <a class="dropdown-item" href="financial.html">Financial and Report</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            What we do?</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="causes/sustainablemenstruation.html">Sustainable
+                                Menstruation</a>
+                            <a class="dropdown-item" href="causes/healthcare.html">Sustainable Healthcare</a>
+                            <a class="dropdown-item" href="causes/womenempowerment.html">Women Empowerment</a>
+                            <a class="dropdown-item" href="causes/child_development.html">Child Development</a>
+                            <a class="dropdown-item" href="causes/social_entrepreneurship.html">Social Entrepreneurship
+                                and
+                                Livelihood</a>
+                            <a class="dropdown-item" href="causes/new-environment.html">Environment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VolunteerForm.html">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team_section.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery/galleery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           id="donatebutton"
+                            href="occ.html">Donate Now</a>
+                    </li>
+                    <li>
+                      
+                        <form action="" class="search-bar">
+                            <input type="search" name="search" pattern=".*\S.*" required>
+                            <button class="search-btn" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="faq-image">
+ <img src="images/faq-image.png" alt="" srcset="">
+    </section>
+    <!-- <div class="ban" >
+        <a href="#about">About Medlife</a>
+        <a href="#donation">Donation</a>
+        <a href="#internship">Internship</a>
+        <a href="#other">Other</a>
+    </div>
+    <section class="faq">
+        
+    <section id="about"> <h3 style="text-align: center; color: #0f9c0f;">About Medlife</h3>
+                <hr>
+                <button class="accordion">
+                    Q.  How old is Medlife Foundation?</button>
+                 <div class="panel">
+                     <p>Ans. Medlife Foundation was established in the year 2014</p>
+                 </div>
+         
+                 <button class="accordion">
+                    Q.  What is Medlife Foundation?</button>
+                 <div class="panel">
+                     <p>Ans. An NGO Registered under The Bombay Trusts Act,1950, it’s a Non-Governmental Organization (NGO) was
+                         established on 22nd January 2014 by Bhushan Shirude and Sandeep Shirude</p>
+                 </div>
+         
+         
+                 <button class="accordion">Q. Which areas does Medlife Foundation work in?</button>
+                 <div class="panel">
+                     <p>Ans. Medlife Foundation has been working in the areas of education, healthcare, child development ,sports for
+                         development,Women empowerment,agricultural transformation,and social entrepreneurship program.</p>
+                 </div>
+         
+                 <button class="accordion">Q. What is the working model of medlife Foundation?</button>
+                 <div class="panel">
+                     <p>Ans. Medlife Foundation works under various models,like Healthcare awareness campaign,education
+                         Seminars,Agricultural exhibition, sports awareness ,and social entrepreneurship program for rural people
+                         and so on.</p>
+                 </div>
+         
+                 <button class="accordion">Q. What is the source of funding for the Medlife Foundation ?</button>
+                 <div class="panel">
+                     <p>Ans. Around 70-80% funding support of the organization comes from corporates, individual donors, and private
+                         institutions.</p>
+                 </div>
+         
+                 <button class="accordion">Q. How does Medlife Foundation choose the projects / grassroots NGOs to work with?
+                 </button>
+                 <div class="panel">
+                     <p>Ans. Medlife Foundation looks for emerging and committed grassroots organizations for reaching out to
+                         underprivileged communities. We partner with people and organizations that want to make a difference but
+                         do not have adequate knowledge and capacity to raise resources or work in a professional manner.</p>
+                 </div>
+         
+                 <button class="accordion">Q. At present how many people are directly benefiting from various programs of Medlife
+                     Foundation?</button>
+                 <div class="panel">
+                     <p>Ans. Your Content Goes Here</p>
+                 </div>
+                 <button class="accordion">Q. I would like to view your Annual Report to know how you raise and disburse
+                    resources?</button>
+                <div class="panel">
+                    <p>Ans. You can access our Annual Reports online as well as request a printed copy from the Medlife Foundation
+                        head office nearest to you.
+                        Click here to Read the online reports</p>
+                </div>
+    </section>
+
+              <section id="donation" style="text-align: center; color: #0f9c0f;">  <h3>Donation</h3>
+                <hr>
+                <button class="accordion">Q. How can I donate to Medlife Foundation?
+                </button>
+                <div class="panel">
+                    <p>Ans. You can go to Donate Now section of Medlife Foundation’s website and donate online. For other donations
+                        related queries please write to donation@medlifoundation.org</p>
+                </div>
+        
+                <button class="accordion">Q. What will Medlife Foundation do with my donation?
+                </button>
+                <div class="panel">
+                    <p>Ans. As soon as the donation through cheque or online is reconciled by the bank, the amount is allotted to the
+                        specific program, which it has been meant for. The utilization and results are managed, monitored and
+                        audited. The outcome is reflected in the annual impact report, which is shared with the donors and
+                        annual report on our website .</p>
+                </div>
+        
+                <button class="accordion">Q. Does Medlife Foundation accept donations in USD or Pounds?</button>
+                <div class="panel">
+                    <p>Ans. We accept donations only in Indian Rupees on the Medlife Foundation site in India. However, you can send
+                        us Cheques/ Demand Drafts in any currency.Donors residing in countries other than India, US, and the UK,
+                        can also donate via bank transfers. Please write to us at donation@medlifefoundation.org for details on
+                        this.</p>
+                </div>
+        
+                <button class="accordion">Q. How much should I donate?</button>
+                <div class="panel">
+                    <p>Ans. There is no specific amount that should be donated.</p>
+                </div>
+                <button class="accordion">Q. How safe is my personal information with Medlife on the Medllife Foundation site?
+                </button>
+                <div class="panel">
+                    <p>Ans. We are committed to protecting your personal information with us. For more details, please do read our
+                        Privacy Policy.</p>
+                </div>
+                <button class="accordion">Q. What is the process of keeping the donor’s information safe?
+                </button>
+                <div class="panel">
+                    <p>Ans. As a credible organization, we honor the privacy of our donors. The donor data is not exposed or shared
+                        with any external agency under any circumstances. The data is kept strictly confidential and only
+                        authorized staff with a special non-disclosure bond have access to it</p>
+                </div>
+                <button class="accordion">Q. Is the website safe to make online payments?</button>
+                <div class="panel">
+                    <p>Ans. Yes, the website is safe for any kind of transaction. Also, any information exchange is kept safe and in
+                        no condition gets disclosed.</p>
+                </div>
+                <button class="accordion">Q. Will you send me tax exemption certificate?
+                </button>
+                <div class="panel">
+                    <p>Ans. Certainly. While specifying the details of your donation, just mention that you wish to claim tax
+                        benefits. The tax exemption certificate will reach you within 45 working days</p>
+                </div>
+                <button class="accordion">Q. How do I contact you regarding my donation in India?
+                </button>
+                <div class="panel">
+                    <p>Ans. For more assistance or information on donating to Medlife Foundation in India, please do write to us at
+                        info@medlifefoundation.org.</p>
+                </div>
+                <button class="accordion">Q. What are the Tax benefits that a donor will get?
+                </button>
+                <div class="panel">
+                    <p>Ans. A donor will get 50% of tax exemption on the donation under section 80 G of Income Tax Act, 1961</p>
+                </div>
+                <button class="accordion">Q. Do you issue Tax receipts? How soon will the receipts arrive?</button>
+                <div class="panel">
+                    <p>Ans. Yes, tax receipts are issued to all the donors irrespective of the amount supported. A digital copy of
+                        the receipt is generated on and sent via e-mail post realization of the donated amount. The hard copy of
+                        the receipt is delivered to the donor within 10 working days</p>
+                </div>
+                <button class="accordion">Q. What happens if the tax receipt is lost?</button>
+                <div class="panel">
+                    <p>Ans. In case of loss of the original receipt, a duplicate tax receipt is issued on receipt of a formal request
+                        from the donor</p>
+                </div>
+                <button class="accordion">Q. Can one donate in kind (old clothes, books, stationary etc)?</button>
+                <div class="panel">
+                    <p>Ans. Yes. We accept old clothes books and stationary</p>
+                </div>
+                <button class="accordion">Q. How can I access the Charity Commissioners certificate?</button>
+        <div class="panel">
+            <p>Ans. You can call or write to mail us Info@medlifefoundation.org Medlife Foundation office nearest to you for
+                a copy of the same.</p>
+        </div>
+        <button class="accordion">Q. Can I donate to Medlife Foundation from outside of India?
+        </button>
+        <div class="panel">
+            <p>Ans. Yes, you can donate to Medlife Foundation even if you are living outside of India.</p>
+        </div>
+    </section>
+    <section id="internship" style="text-align: center; color: #0f9c0f;">        <h3>Internship</h3>
+                <hr>
+                <button class="accordion">Q. Does Medlife Foundation provide internships? If yes, how can I apply for it?
+                </button>
+                <div class="panel">
+                    <p>Ans. Interested candidates can go to contact us section of our website and write to the relevant section or
+                        department they are interested in interning with.</p>
+                </div>
+    </section>              
+    <section id="other" style="text-align: center; color: #0f9c0f;"> <h3>Other</h3>
+                <hr>
+                <button class="accordion">Q. What should I do if my address or phone number changes?
+                </button>
+                <div class="panel">
+                    <p>Ans. You can either drop us an email at info@medlifefoundation.org with the new details or call us on +91
+                        8275320465. We’ll update our systems as soon as we can.</p>
+                </div>
+                <button class="accordion">Q. Why do you need my passport number?</button>
+                 <div class="panel">
+                  <p>Ans. We require this information for NRI (Non-Resident Indians) donors who are Indian citizens having an
+                Indian passport. This is because their contribution goes into a separate account as per the Foreign
+                Contribution Regulation Act, (FCRA), 1976.</p>
+                </div>
+    </section>  -->
+
+    <h2 class="accordion__heading" style="text-align: center;">Frequently Asked Questions</h2>
+
+    <div class="ban" style="margin-bottom: 20px;">
+        <a href="#about">About Medlife</a>
+        <a href="#donation">Donation</a>
+        <a href="#internship">Internship</a>
+        <a href="#other">Other</a>
+    </div>
+
+    <section id="about"> <h3 style="text-align: center; color: #0f9c0f;">About Medlife</h3>
+        <hr>
+    <div class="accordion">
+        
+      
+        <div class="accordion__item">
+          <button class="accordion__btn">
+      
+            <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q.  How old is Medlife Foundation?</span>
+            <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+          </button>
+      
+          <div class="accordion__content">
+            <p style="background-color: #fff;"> Ans. Medlife Foundation was established in the year 2014</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+            <button class="accordion__btn">
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q.  What is Medlife Foundation?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;"> Ans. An NGO Registered under The Bombay Trusts Act,1950, it’s a Non-Governmental Organization (NGO) was
+                established on 22nd January 2014 by Bhushan Shirude and Sandeep Shirude</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__btn">
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Which areas does Medlife Foundation work in?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;"> Ans. Medlife Foundation has been working in the areas of education, healthcare, child development ,sports for
+                development,Women empowerment,agricultural transformation,and social entrepreneurship program.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__btn">
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. What is the working model of medlife Foundation?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;"> Ans. Medlife Foundation works under various models,like Healthcare awareness campaign,education
+                Seminars,Agricultural exhibition, sports awareness ,and social entrepreneurship program for rural people
+                and so on.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__btn">
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. What is the source of funding for the Medlife Foundation ?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;"> Ans. Around 70-80% funding support of the organization comes from corporates, individual donors, and private
+                institutions.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__btn">
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. How does Medlife Foundation choose the projects / grassroots NGOs to work with?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;"> Ans. Medlife Foundation looks for emerging and committed grassroots organizations for reaching out to
+                underprivileged communities. We partner with people and organizations that want to make a difference but
+                do not have adequate knowledge and capacity to raise resources or work in a professional manner.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__btn">
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. At present how many people are directly benefiting from various programs of Medlife
+                Foundation?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;"> Ans. Your Content Goes Here</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. I would like to view your Annual Report to know how you raise and disburse
+                resources?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;"> Ans. You can access our Annual Reports online as well as request a printed copy from the Medlife Foundation
+                head office nearest to you.
+                Click here to Read the online reports</p>
+            </div>
+          </div>
+
+          <section id="donation" style="text-align: center; color: #0f9c0f;">  <h3>Donation</h3>
+            <hr>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. How can I donate to Medlife Foundation?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff; text-align: left;"> Ans. You can go to Donate Now section of Medlife Foundation’s website and donate online. For other donations
+                related queries please write to donation@medlifoundation.org</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. What will Medlife Foundation do with my donation?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;"> Ans. As soon as the donation through cheque or online is reconciled by the bank, the amount is allotted to the
+                specific program, which it has been meant for. The utilization and results are managed, monitored and
+                audited. The outcome is reflected in the annual impact report, which is shared with the donors and
+                annual report on our website .</p>
+            </div>
+          </div>
+      
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Does Medlife Foundation accept donations in USD or Pounds?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;"> Ans. We accept donations only in Indian Rupees on the Medlife Foundation site in India. However, you can send
+                us Cheques/ Demand Drafts in any currency.Donors residing in countries other than India, US, and the UK,
+                can also donate via bank transfers. Please write to us at donation@medlifefoundation.org for details on
+                this.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. How much should I donate?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;"> Ans. There is no specific amount that should be donated.</p>
+            </div>
+          </div>
+      
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. How safe is my personal information with Medlife on the Medllife Foundation site?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;"> Ans. We are committed to protecting your personal information with us. For more details, please do read our
+                Privacy Policy..</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. What is the process of keeping the donor’s information safe?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;"> Ans. As a credible organization, we honor the privacy of our donors. The donor data is not exposed or shared
+                with any external agency under any circumstances. The data is kept strictly confidential and only
+                authorized staff with a special non-disclosure bond have access to it</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Is the website safe to make online payments?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;"> Ans. Yes, the website is safe for any kind of transaction. Also, any information exchange is kept safe and in
+                no condition gets disclosed.</p>
+            </div>
+          </div>
+
+          
+          
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Will you send me tax exemption certificate?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;"> Ans. Certainly. While specifying the details of your donation, just mention that you wish to claim tax
+                benefits. The tax exemption certificate will reach you within 45 working days</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. How do I contact you regarding my donation in India?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. For more assistance or information on donating to Medlife Foundation in India, please do write to us at
+                info@medlifefoundation.org.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. What are the Tax benefits that a donor will get?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. A donor will get 50% of tax exemption on the donation under section 80 G of Income Tax Act, 1961</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Do you issue Tax receipts? How soon will the receipts arrive?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. Yes, tax receipts are issued to all the donors irrespective of the amount supported. A digital copy of
+                the receipt is generated on and sent via e-mail post realization of the donated amount. The hard copy of
+                the receipt is delivered to the donor within 10 working days</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. What happens if the tax receipt is lost?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. In case of loss of the original receipt, a duplicate tax receipt is issued on receipt of a formal request
+                from the donor</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Can one donate in kind (old clothes, books, stationary etc)?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. Yes. We accept old clothes books and stationary</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. How can I access the Charity Commissioners certificate?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. You can call or write to mail us Info@medlifefoundation.org Medlife Foundation office nearest to you for
+                a copy of the same.</p>
+            </div>
+          </div>
+
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Can I donate to Medlife Foundation from outside of India?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. Yes, you can donate to Medlife Foundation even if you are living outside of India.</p>
+            </div>
+          </div>
+
+        </section>
+
+          <section id="internship" style="text-align: center; color: #0f9c0f;">        <h3>Internship</h3>
+            <hr>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Does Medlife Foundation provide internships? If yes, how can I apply for it?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. Interested candidates can go to contact us section of our website and write to the relevant section or
+                department they are interested in interning with.</p>
+            </div>
+          </div>
+
+        </section>
+
+          <section id="other" style="text-align: center; color: #0f9c0f;"> <h3>Other</h3>
+            <hr>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. What should I do if my address or phone number changes?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. You can either drop us an email at info@medlifefoundation.org with the new details or call us on +91
+                8275320465. We’ll update our systems as soon as we can.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">             
+        
+              <span class="accordion__caption"><i class="far fa-lightbulb"></i>Q. Why do you need my passport number?</span>
+              <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+            </button>
+        
+            <div class="accordion__content">
+              <p style="background-color: #fff;text-align: left;">Ans. We require this information for NRI (Non-Resident Indians) donors who are Indian citizens having an
+                Indian passport. This is because their contribution goes into a separate account as per the Foreign
+                Contribution Regulation Act, (FCRA), 1976.</p>
+            </div>
+          </div>
+
+
+        </section>
+
+        
+
+
+
+          
+          
+        
+      
+          
+      
+        
+      </div>
+
+        
+
+
+    
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </section>
+
+    <!-- SUBSCRIBE -->
+
+    <div class="subscribe">
+        <h1 style="font-weight: bolder;"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Join our community
+        </h1>
+        <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+        <input style="margin-top: 5px;" class="subscribebtn" value="Subscribe Now!" type="submit">
+    </div><br>
+
+    
+   <!-- topbutton  -->
+   <div id="topbtn">
+    <a href="#" style="color:white"><i class="fa fa-arrow-up" aria-hidden="true"></i> </a>
+</div>
+<!-- topbutton  -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331;width: 100%;">
+
+            <!-- Section: Links  -->
+            <section class="" style="padding:1%;">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Medlife Foundation</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Medlife Foundation strives to work towards finding Effective Healthcare Solutions to the
+                                problems
+                                faced by people who are not privileged by spreading awareness on Sustainable
+                                Menstruation and
+                                Development of Children belonging to a weaker section of society. ....<br>
+                                <a href="timeline.html">Learn more</a>
+                            </p>
+
+
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">Quick links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="timeline.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp About us</a>
+                            </p>
+
+                            <!-- <p>
+                                <a href="#portfolio" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp What we do?</a>
+                            </p> -->
+                            <p>
+                                <a href="occ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Donate</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Contact us</a>
+                            </p>
+                            <p>
+                                <a href="FAQ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    FAQ</a>
+                            </p>
+                            <p>
+                                <a href="gallery/media.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Media</a>
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px;">
+
+                            <p>
+                                <a href="career.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Career</a>
+                            </p>
+                            <!-- <p>
+                                <a href="#!" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>
+                                    Gallery</a>
+                            </p> -->
+                            <p>
+                                <a href="partnersandsupporters.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Partners &
+                                    supporters</a>
+                            </p>
+                            <p>
+                                <a href="InternshipForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Apply for Internship</a>
+                            </p>
+                            <p>
+                                <a href="corporatepartnership.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Corporate partnership</a>
+                            </p>
+                            <p>
+                                <a href="VolunteerForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Be a Volunteer</a>
+                            </p>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p> <a href="tel:827-532-0465" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Bhushan :+91 82753 20465</a></p>
+
+                            <p><a href="tel:997-005-4699" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Sandeep : +91 99700 54699</a></p>
+                            <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Dr.Bhushan : +91 93073 99492</a></p>
+                            <!-- <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i> Dr.Bhushan : +91 93073 99492</a></p>                  -->
+                            <p><a href="mailto:info@medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-envelope mr-3"></i>&nbsp
+                                    info@medlifefoundation.org</a> </p>
+                            <p><a href="www.medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-globe"></i>&nbsp
+                                    www.medlifefoundation.org</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Copyright -->
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <div id="socialicon">
+                <p>SHOW US SOME &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>&nbsp; ON SOCIAL MEDIA</p>
+
+                    <a href="https://www.facebook.com/medlifefoundationbahal" target="_blank" class="text-white">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/Med_foundation" target="_blank" class="text-white">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="Home.html" target="_blank" class="text-white">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/medlifefoundation/" target="_blank" class="text-white ">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/MedlifeFoundation" target="_blank" class="text-white">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/medlife-foundation" target="_blank" class="text-white ">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                </div><br>
+                © 2016-2022 Copyright:&nbsp;
+                <a class="text-white" href="index.html">Medlifefoundation </a>|
+                <a class="text-white" href="privacy.html">Privacy Policy</a>|
+                <a class="text-white" href="terms.html">Terms & Conditions</a>|
+                <a class="text-white" href="refund.html">Refund Policy</a>
+
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- scriptlinks -->
+
+    <script>
+        // select all accordion items
+    const accItems = document.querySelectorAll(".accordion__item");
+    
+    // add a click event for all items
+    accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
+    
+    function toggleAcc() {
+      // remove active class from all items exept the current item (this)
+      accItems.forEach((item) => item != this ? item.classList.remove("accordion__item--active") : null
+      );
+    
+      // toggle active class on current item
+      if (this.classList != "accordion__item--active") {
+        this.classList.toggle("accordion__item--active");
+      }
+    }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

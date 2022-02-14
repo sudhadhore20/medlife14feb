@@ -1,0 +1,891 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog-1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Healthcare Facilities</title>
+    <style>
+        #donatebutton {
+            background-color: rgb(15, 179, 15);
+            width: fit-content;
+            color: honeydew;
+            border-radius: 10px;
+            margin-left: 8px;
+            padding-right: 8px;
+
+        }
+
+        #donatebutton:hover {
+            /* background-color: #7bdb7b; */
+            box-shadow: 0px 10px 10px #0f9c0f;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .top-navbar {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+            font-size: 20px;
+            transition: .5s ease-in-out;
+        }
+
+        .nav-item a {
+            font-size: large;
+            color: black;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            padding-right: 10px;
+        }
+
+        .navbar-brand img {
+            width: 230px;
+            height: 70px;
+        }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu {
+            border: none;
+            /* background: transparent; */
+        }
+
+
+
+        /* Subscribe */
+
+        .subscribe {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subscribebtn:hover {
+            background-color: #0f9c0f;
+            border: none;
+        }
+
+        .subscribebtn {
+            background-color: rgb(15, 179, 15);
+            color: white;
+            border: none;
+        }
+
+        .inptfld {
+            border-radius: 20px;
+            padding: 5px;
+            width: 20%;
+
+        }
+
+        .subscribebtn {
+            border-radius: 20px;
+            border: none;
+            padding: 5px;
+        }
+
+        /* footer */
+        .footer #socialicon a {
+            text-decoration: none;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .footer #socialicon .text-white {
+            margin-right: 0.5rem;
+        }
+
+
+        .footer #socialicon i {
+            text-align: left;
+            font-size: large;
+        }
+
+
+
+        /*body*/
+        .top {
+            padding: 4%;
+            font-size: 18px;
+        }
+
+        .top h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: rgb(15, 179, 15);
+            font-weight: bold;
+        }
+
+        .top h4 {
+            font-size: 28px;
+            text-align: center;
+            color: rgb(15, 179, 15);
+        }
+
+        .top p {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 2%;
+
+        }
+
+        .end {
+            padding: 4%;
+            font-size: 20px;
+            padding-top: 0%;
+            /* text-align: center; */
+        }
+
+        
+        .section-container1 .columns.content .content-container h5,
+        .section-container2 .columns.content .content-container h5,
+        .section-container3 .columns.content .content-container h5,
+        .section-container4 .columns.content .content-container h5 {
+            font-size: 28px;
+
+
+        }
+
+        .section-container1 .columns.content .content-container,
+        .section-container2 .columns.content .content-container,
+        .section-container3 .columns.content .content-container,
+        .section-container4 .columns.content .content-container {
+            font-size: 20px;
+
+        }
+
+
+
+        .important .whole-body {
+            padding: 5%;
+
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        body {
+            overflow-x: hidden;
+
+        }
+
+        .section-container1,
+        .section-container2,
+        .section-container3,
+        .section-container4 {
+            --bs-gutter-x: 1rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        .section-container1 .columns,
+        .section-container2 .columns,
+        .section-container3 .columns,
+        .section-container4 .columns {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        .section-container1 .columns.image,
+        .section-container2 .columns.image,
+        .section-container3 .columns.image,
+        .section-container4 .columns.image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: revert;
+        }
+
+        .section-container1 .columns.content .content-container,
+        .section-container2 .columns.content .content-container,
+        .section-container3 .columns.content .content-container,
+        .section-container4 .columns.content .content-container {
+            padding: 0px 10px;
+        }
+
+        .section-container1 .columns.content .content-container h5,
+        .section-container2 .columns.content .content-container h5,
+        .section-container3 .columns.content .content-container h5,
+        .section-container4 .columns.content .content-container h5 {
+            font-weight: 700;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .section-container1 .columns.content .content-container p,
+        .section-container2 .columns.content .content-container p,
+        .section-container3 .columns.content .content-container p,
+        .section-container4 .columns.content .content-container p {
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        @media screen and (min-width:200px) and (max-width:800px) {
+            .navbar-light .navbar-nav .nav-link {
+                color: #000000;
+                font-size: 1rem;
+                padding-left: 10px;
+                transition: .5s ease-in-out;
+            }
+
+            .nav-item a {
+                font-size: 0.9rem;
+                color: black;
+                padding-left: 45px;
+            }
+
+
+            .footer h6 {
+                font-size: 1rem;
+            }
+
+            .subscribe .inptfld {
+                width: 50%;
+                height: 50px;
+            }
+
+            .subscribe .subscribebtn {
+                width:fit-content;
+                height: 50px;
+            }
+
+
+            .section-container2,
+            .section-container4 {
+                flex-direction: column-reverse;
+            }
+
+            .section-container1,
+            .section-container3 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section-container1 .columns.image,
+            .section-container2 .columns.image,
+            .section-container3 .columns.image,
+            .section-container4 .columns.image {
+                /* 
+  order:1; */
+                width: 100%;
+                height: 250px;
+            }
+
+            .section-container1 .columns.content,
+            .section-container2 .columns.content,
+            .section-container3 .columns.content,
+            .section-container4 .columns.content {
+                /* display:block;
+  order:2; */
+                width: 100%;
+            }
+
+            .section-container1 .columns.content .content-container h5,
+            .section-container2 .columns.content .content-container h5,
+            .section-container3 .columns.content .content-container h5,
+            .section-container4 .columns.content .content-container h5 {
+                margin-bottom: 5px;
+            }
+
+        }
+
+
+
+        @media (min-width:200px) and (max-width:1200px) {
+            .important .whole-body {
+                padding: 1%;
+            }
+        }
+
+        /*donate-volunteer*/
+        .header-image {
+            background-image: url('images/Donate-Volunteer.jpg');
+            width: auto;
+            height: 460px;
+            opacity: 1;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(255, 255, 255);
+            min-height: 150px;
+            /*transform: translate3d(0px, -80.5809px, 0px);*/
+margin-top: 2%;
+            margin-bottom: 1%;
+        }
+
+        .header-text {
+            display: flex;
+            padding: 6%;
+        }
+
+        .header-text h2 {
+            font-size: 3.5rem;
+            margin-bottom: 0;
+            color: white;
+            font-weight: 700;
+        }
+
+        .header-text p {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .header-text .donate {
+            flex: 1;
+            padding: 2%;
+            margin-top: 6%;
+        }
+
+        .header-text .volunteer {
+            flex: 1;
+            text-align: right;
+            padding: 2%;
+            margin-top: -5%;
+        }
+
+        .header-text button {
+            padding: 3%;
+            /* border: 3px solid white; */
+            border: none;
+            background-color: rgb(15, 179, 15);
+            font-weight: bolder;
+            color: white;
+            font-size: 1.009rem;
+        }
+
+        .header-text span {
+            color: rgb(15, 179, 15);
+            font-weight: bolder;
+        }
+
+        .header-text button:hover {
+            cursor: pointer;
+        }
+
+
+        @media(min-width:200px) and (max-width:1000px) {
+            .header-text {
+                flex-direction: column;
+            }
+
+            .header-image {
+                height: auto;
+                margin-top: 10%;
+            }
+
+            .header-text .volunteer {
+                margin-top: 8%;
+                margin-bottom: 5%;
+            }
+
+        }
+
+        /*donate-volunteer*/
+
+        /***COMMENT-BOX***/
+        .comment-box {
+            width: 500px;
+            padding: 2.5%;
+            margin-top: -4%;
+            margin: auto;
+            margin-top: 3%
+        }
+
+        .comment-box form textarea {
+            border: 1px solid gray;
+            border-radius: 6px;
+            padding: 4%;
+            font-size: 18px;
+        }
+
+        .comment-box form .comment-button {
+            padding: 14px 14px;
+            border: none;
+            background-color: rgb(15, 179, 15);
+            border-radius: 6px;
+            font-size: 1.2rem;
+            color: white;
+            margin-top: -3%;
+        }
+
+        @media (min-width:200px) and (max-width:1200px) {
+            .comment-box {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .comment-box form textarea {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .section-container1 .columns.content .content-container,
+            .section-container2 .columns.content .content-container,
+            .section-container3 .columns.content .content-container,
+            .section-container4 .columns.content .content-container {
+                padding: 20px 4%;
+            }
+        }
+
+        @media(min-width:250px) and (max-width:400px) {
+            .comment-box form .comment-button {
+                margin-top: -6%;
+            }
+        }
+
+        @media(min-width:700px) and (max-width:900px) {
+            .comment-box form .comment-button {
+                margin-top: -2%;
+            }
+        }
+
+        @media(min-width:900px) and (max-width:1280px) {
+            .comment-box form .comment-button {
+                margin-top: -2%;
+            }
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="top-navbar navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" style="padding-left: 5%" href="index.html">
+                <img src="images\Medlife-Foundation-Reg-Logo.png" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Home.html">Mission and Vision</a>
+                            <a class="dropdown-item" href="awards.html">Awards and Accolades</a>
+                            <a class="dropdown-item" href="financial.html">Financial and Report</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            What we do?</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="causes/sustainablemenstruation.html">Sustainable
+                                Menstruation</a>
+                            <a class="dropdown-item" href="causes/healthcare.html">Sustainable Healthcare</a>
+                            <a class="dropdown-item" href="causes/womenempowerment.html">Women Empowerment</a>
+                            <a class="dropdown-item" href="causes/child_development.html">Child Development</a>
+                            <a class="dropdown-item" href="causes/social_entrepreneurship.html">Social Entrepreneurship
+                                and
+                                Livelihood</a>
+                            <a class="dropdown-item" href="causes/new-environment.html">Environment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VolunteerForm.html">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team_section.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery/galleery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="donatebutton" href="occ.html">Donate Now</a>
+                    </li>
+                    <li>
+
+                        <form action="" class="search-bar">
+                            <input type="search" name="search" pattern=".*\S.*" required>
+                            <button class="search-btn" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section class="important">
+        <section class="whole-body">
+            <div class="top">
+
+                <h2>Bullying and physical abuse in educational institution</h2>
+                <p>
+
+                    Unfortunately bullying is a widespread problem and it can take on everything from your self esteem  to your physical health. Even in this developed century, school and college students are still being bullied. Still many picking on people who are smaller than them or different from them or people who don’t speak up for themselves. As said by Jeremy Anderson, a public speaker, “A terrorist gang won’t pick up fight or war with any air force or navy force. They only show their power in shopping mall or with a little coward.” This becomes same with the bullies. They pick fights with or bully only those are smaller than them. Sometimes bullying can be a lot more complicated than that bullies use their power to hurt or control others and they might make an individual feel unsafe in places where the individual should feel protected. School sports teams or clubs have to be safe spaces for everyone
+                </p>
+            </div>
+
+            <div class="section-container1">
+                <div class="columns image" style="background-image:url('images/blog25-1.jpg')">
+                    &nbsp;
+                </div>
+
+                <div class="columns content">
+                    <div class="content-container">
+                        <!-- <h5>Education</h5> -->
+                        <p>
+                            You may sometimes don’t feel welcome at school, some girls or boys may laugh at you and make fun you or ignore you altogether, seems like nobody notices you. No one has the right to hurt you or make you feel unsafe. The problem is bullying is had to stop and that’s because most people’s  first reaction to bullying is to ignore it. You may feel like, it will go away but the problem with ignoring it is that it won’t stop and it might even get worse maybe you’re embarrassed or you want to believe that it’s not a big deal or maybe you’re afraid that telling will make it worse or that whoever you need to tell won’t understand or be able to help. 
+                            This isn’t your fault. Don’t be hard on yourself. There are many reasons why bullies do what they do. So this has lot to do with the bully’s personal issues, maybe a little with you. Well known and famous people like Taylor Swift, Christian Bale, Steven Spielberg, Bill Clinton etc. have undergone and experienced this bitter cup of bullying. So, if you’re being bullied, don’t lose hope, you’re in some pretty good company. 
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container2">
+                <div class="columns content">
+                    <div class="content-container">
+
+                        <p>
+                            <h3><span>What to do if you’re being bullied</span></h3> <br>
+                            These following steps will sure boost up your confidence and help an individual to protect themselves from harm. Bullying has become very common thing like one-third of students are bullied each year. The reason why others get bullied is, the appearance like a nerd, or being unique, or liking unique clothes and so on. <br>
+                            •  <span>Don’t try to focus on your weakness.</span> You can also try writing down all the great qualities that make you stand out from the crowd. Good qualities may include your high score in subjects, or your unique talent in music or sports or games. Whatever it is, get it down in a paper. This is the person actually you are. The next time a bully makes you feel like you’re something useless, make this a collection of positive you. Remember the list, whenever you are bullied. <br>
+                            •	<span>Build a group of people around.</span> Surround yourself with people who care about you and who appreciate you for exactly who you are. It will be ok if you’re going through this experience with backup. If you’re having trouble finding such a army, try seeking out friends who have similar interests. Look for something like clubs at school or community, or sports whatever you’re interested in. 
+                        </p>
+
+                    </div>
+                </div>
+                <div class="columns image" style="background-image:url('images/blog25-2.jpg')">
+                    &nbsp;
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container1">
+                <div class="columns image" style="background-image:url('images/blog25-3.jpg')">
+                    &nbsp;
+                </div>
+
+                <div class="columns content">
+                    <div class="content-container">
+                        <!-- <h5>Education</h5> -->
+                        <p>
+                            
+                                •	<span>Ignore the bully.</span> This is the most recommended Anti-bullying tactic. Sometimes, all a bully want is to get a reaction from you, if he/she doesn’t receive it from you, they’ll get bored and move on. Another better way to react is, use humour to make them silent. Sometimes by being alone, you become prey to them. So better to be in groups. This makes the bully hard to get near you. <br> 
+                                •	<span>Get out of there.</span> This may be the other option on line. Find out a way to yourself from  the situation. Go find your friends or go get help.  <br>
+                                •	<span>Find someone you talk to or speak open your problems.</span> Nobody has the right to make you feel unsafe, uncomfortable or unhappy. Find someone who you can trust. It may be your teacher , counsellor, parent, friend and tell them what’s going on. You don’t have to face everything alone. There are people around you, who will accept you and appreciate you as you are. There are people around, who will drop anything to help you. If you’re uncomfortable approaching someone like teachers, there are some places to turn to. Reach for help line. Help line has people who are available to talk anytime, no matter day or night. Don’t let yourself believe that you’re in this bullying issues without any help backups.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container2">
+                <div class="columns content">
+                    <div class="content-container">
+
+                        <p>
+                            <h3><span>Signs of abuse 
+                                </span></h3>
+                                The very first sign is, you may note is that the children refuses or doesn’t want to go school. They want to spend time alone without socially mingling. Difficulty in sitting down or walking neglected. Abused children show extremes in their behaviour. They may be extremely quiet and calm or quiet volatile. Teachers may note that, they show no interest in studies, resulting in lower of grades. 
+                                They also seems to suffer from depression and other mental health conditions. 
+                                They have feelings of insufficiency. 
+                                There’s probably a sense of unworthiness . This may result an unstable sense of self stemming from emotional, verbal or physical abuse. In an abusive situation, an abuser plants false ideas in your mind. The power of these abuse is also in the words being used.
+                                Signs of low self-esteem like pessimism, hostility, lack of motivation, or being a bad communicator are also seen.
+                                
+                        </p>
+
+                    </div>
+                </div>
+                <div class="columns image" style="background-image:url('images/blog25-4.jpg')">
+                    &nbsp;
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="end">
+                <!-- <h2>OUR ROLE</h2> -->
+                <p>  You may have flashbacks. Flashbacks to previous traumas can come in the form of PTSD. PTSD can affect anyone who were victims of assault or abuse. You may have complex PTSD or CPTSD. CPTSD develop when you suffer repetitive abuse over an extended period of time. The stressful event or situation you were exposed to, was exceptionally threatening which caused you distress.
+                    There may be difficulty falling or staying asleep, increased psychological sensitivity, irritability, difficulty regulating your emotions, and difficulty concentrating.
+                    You feel numb to your emotions. It can be very difficult to explain how it feels inside. 
+                    Working out, changing the negative narrative in your head, and practicing mindfulness can help boost your self-esteem. Try to replace negative thought patterns, deals with stress and suicide urges. 
+                    
+
+                </p>
+            </div>
+          
+            
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <!-- <br> -->
+                <form action="" id="commentbox">
+                    <label for="commentbox"></label>
+                    <textarea rows="2" cols="50" name="commentbox" placeholder="comments"></textarea> <br>
+                    <br>
+                    <a href=""><button class="comment-button">Leave Comment</button></a>
+                </form>
+            </div>
+
+            <hr>
+            <div class="last">
+                <p><span class="material-icons" style="vertical-align: middle;">navigate_before</span><a
+                        href="blog24.html" style="text-decoration: none; color: black;">Previous Blog</a></p>
+
+                <p><a href="blog26.html" style="text-decoration: none; color: black;">Next Blog<span
+                            class="material-icons" style="vertical-align: middle;">navigate_next</span></a></p>
+            </div>
+            <hr>
+
+        </section>
+
+    </section>
+    <div class="header-image">
+        <div class="header-text">
+            <div class="donate">
+                <h2>Donate <span>Online!</span></h2>
+                <p>Donate to make a difference. Get 50% tax exemption on your donations and help us create a better
+                    future for India.</p>
+                <a href="occ.html" target="_blank"><button>DONATE NOW</button></a>
+                </button>
+
+
+            </div>
+            <div class="volunteer">
+                <h2>Become a <span>Volunteer</span></h2>
+                <p>Medlife Foundation volunteers are self-motivated people of all ages and from different walks of life
+                    who give of their time and resources to make positive difference in the lives of children.</p>
+                <a href="VolunteerForm.html" target="_blank"> <button>JOIN TODAY</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <h1 style="font-weight: bolder;"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Join our community
+        </h1>
+        <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+        <input style="margin-top: 5px;" class="subscribebtn" value="Subscribe Now!" type="submit">
+    </div><br>
+
+    
+   <!-- topbutton  -->
+   <div id="topbtn">
+    <a href="#" style="color:white"><i class="fa fa-arrow-up" aria-hidden="true"></i> </a>
+</div>
+<!-- topbutton  -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331;width: 100%;">
+
+            <!-- Section: Links  -->
+            <section class="" style="padding:1%;">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Medlife Foundation</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Medlife Foundation strives to work towards finding Effective Healthcare Solutions to the
+                                problems
+                                faced by people who are not privileged by spreading awareness on Sustainable
+                                Menstruation and
+                                Development of Children belonging to a weaker section of society. ....<br>
+                                <a href="timeline.html">Learn more</a>
+                            </p>
+
+
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">Quick links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="timeline.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp About us</a>
+                            </p>
+
+                            <!-- <p>
+                                <a href="#portfolio" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp What we do?</a>
+                            </p> -->
+                            <p>
+                                <a href="occ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Donate</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Contact us</a>
+                            </p>
+                            <p>
+                                <a href="FAQ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    FAQ</a>
+                            </p>
+                            <p>
+                                <a href="gallery/media.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Media</a>
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px;">
+
+                            <p>
+                                <a href="career.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Career</a>
+                            </p>
+                            <!-- <p>
+                                <a href="#!" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>
+                                    Gallery</a>
+                            </p> -->
+                            <p>
+                                <a href="partnersandsupporters.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Partners &
+                                    supporters</a>
+                            </p>
+                            <p>
+                                <a href="InternshipForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Apply for Internship</a>
+                            </p>
+                            <p>
+                                <a href="corporatepartnership.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Corporate partnership</a>
+                            </p>
+                            <p>
+                                <a href="VolunteerForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Be a Volunteer</a>
+                            </p>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p> <a href="tel:827-532-0465" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Bhushan :+91 82753 20465</a></p>
+
+                            <p><a href="tel:997-005-4699" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Sandeep : +91 99700 54699</a></p>
+                            <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Dr.Bhushan : +91 93073 99492</a></p>
+                            <!-- <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i> Dr.Bhushan : +91 93073 99492</a></p>                  -->
+                            <p><a href="mailto:info@medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-envelope mr-3"></i>&nbsp
+                                    info@medlifefoundation.org</a> </p>
+                            <p><a href="www.medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-globe"></i>&nbsp
+                                    www.medlifefoundation.org</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Copyright -->
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <p>SHOW US SOME &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>&nbsp; ON SOCIAL
+                    MEDIA</p>
+
+                <div id="socialicon">
+                    <a href="https://www.facebook.com/medlifefoundationbahal" target="_blank" class="text-white">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/Med_foundation" target="_blank" class="text-white">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="Home.html" target="_blank" class="text-white">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/medlifefoundation/" target="_blank" class="text-white ">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/MedlifeFoundation" target="_blank" class="text-white">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/medlife-foundation" target="_blank" class="text-white ">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                </div><br>
+                © 2016-2022 Copyright:&nbsp;
+                <a class="text-white" href="index.html">Medlifefoundation </a>|
+                <a class="text-white" href="privacy.html">Privacy Policy</a>|
+                <a class="text-white" href="terms.html">Terms & Conditions</a>|
+                <a class="text-white" href="refund.html">Refund Policy</a>
+
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- scriptlinks -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

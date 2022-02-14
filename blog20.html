@@ -1,0 +1,928 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog-1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Healthcare Facilities</title>
+    <style>
+        #donatebutton {
+            background-color: rgb(15, 179, 15);
+            width: fit-content;
+            color: honeydew;
+            border-radius: 10px;
+            margin-left: 8px;
+            padding-right: 8px;
+
+        }
+
+        #donatebutton:hover {
+            /* background-color: #7bdb7b; */
+            box-shadow: 0px 10px 10px #0f9c0f;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .top-navbar {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+            font-size: 20px;
+            transition: .5s ease-in-out;
+        }
+
+        .nav-item a {
+            font-size: large;
+            color: black;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            padding-right: 10px;
+        }
+
+        .navbar-brand img {
+            width: 230px;
+            height: 70px;
+        }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu {
+            border: none;
+            /* background: transparent; */
+        }
+
+
+
+        /* Subscribe */
+
+        .subscribe {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .subscribebtn:hover {
+            background-color: #0f9c0f;
+            border: none;
+        }
+
+        .subscribebtn {
+            background-color: rgb(15, 179, 15);
+            color: white;
+            border: none;
+        }
+
+        .inptfld {
+            border-radius: 20px;
+            padding: 5px;
+            width: 20%;
+
+        }
+
+        .subscribebtn {
+            border-radius: 20px;
+            border: none;
+            padding: 5px;
+        }
+
+        /* footer */
+        .footer #socialicon a {
+            text-decoration: none;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .footer #socialicon .text-white {
+            margin-right: 0.5rem;
+        }
+
+
+        .footer #socialicon i {
+            text-align: left;
+            font-size: large;
+        }
+
+
+
+        /*body*/
+        .top {
+            padding: 4%;
+            font-size: 18px;
+        }
+
+        .top h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: rgb(15, 179, 15);
+            font-weight: bold;
+        }
+
+        .top h4 {
+            font-size: 28px;
+            text-align: center;
+            color: rgb(15, 179, 15);
+        }
+
+        .top p {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 2%;
+
+        }
+
+        .end {
+            padding: 4%;
+            font-size: 20px;
+            padding-top: 0%;
+            text-align: center;
+        }
+
+        .end h2 {
+            color: #149646;
+            text-align: center;
+        }
+
+        .section-container1 .columns.content .content-container h5,
+        .section-container2 .columns.content .content-container h5,
+        .section-container3 .columns.content .content-container h5,
+        .section-container4 .columns.content .content-container h5 {
+            font-size: 28px;
+
+
+        }
+
+        .section-container1 .columns.content .content-container,
+        .section-container2 .columns.content .content-container,
+        .section-container3 .columns.content .content-container,
+        .section-container4 .columns.content .content-container {
+            font-size: 20px;
+
+        }
+
+
+
+        .important .whole-body {
+            padding: 5%;
+
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        body {
+            overflow-x: hidden;
+
+        }
+
+        .section-container1,
+        .section-container2,
+        .section-container3,
+        .section-container4 {
+            --bs-gutter-x: 1rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        .section-container1 .columns,
+        .section-container2 .columns,
+        .section-container3 .columns,
+        .section-container4 .columns {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        .section-container1 .columns.image,
+        .section-container2 .columns.image,
+        .section-container3 .columns.image,
+        .section-container4 .columns.image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: revert;
+        }
+
+        .section-container1 .columns.content .content-container,
+        .section-container2 .columns.content .content-container,
+        .section-container3 .columns.content .content-container,
+        .section-container4 .columns.content .content-container {
+            padding: 0px 10px;
+        }
+
+        .section-container1 .columns.content .content-container h5,
+        .section-container2 .columns.content .content-container h5,
+        .section-container3 .columns.content .content-container h5,
+        .section-container4 .columns.content .content-container h5 {
+            font-weight: 700;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .section-container1 .columns.content .content-container p,
+        .section-container2 .columns.content .content-container p,
+        .section-container3 .columns.content .content-container p,
+        .section-container4 .columns.content .content-container p {
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        @media screen and (min-width:200px) and (max-width:800px) {
+            .navbar-light .navbar-nav .nav-link {
+                color: #000000;
+                font-size: 1rem;
+                padding-left: 10px;
+                transition: .5s ease-in-out;
+            }
+
+            .nav-item a {
+                font-size: 0.9rem;
+                color: black;
+                padding-left: 45px;
+            }
+
+
+            .footer h6 {
+                font-size: 1rem;
+            }
+
+            .subscribe .inptfld {
+                width: 50%;
+                height: 50px;
+            }
+
+            .subscribe .subscribebtn {
+                width:fit-content;
+                height: 50px;
+            }
+
+
+            .section-container2,
+            .section-container4 {
+                flex-direction: column-reverse;
+            }
+
+            .section-container1,
+            .section-container3 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section-container1 .columns.image,
+            .section-container2 .columns.image,
+            .section-container3 .columns.image,
+            .section-container4 .columns.image {
+                /* 
+  order:1; */
+                width: 100%;
+                height: 250px;
+            }
+
+            .section-container1 .columns.content,
+            .section-container2 .columns.content,
+            .section-container3 .columns.content,
+            .section-container4 .columns.content {
+                /* display:block;
+  order:2; */
+                width: 100%;
+            }
+
+            .section-container1 .columns.content .content-container h5,
+            .section-container2 .columns.content .content-container h5,
+            .section-container3 .columns.content .content-container h5,
+            .section-container4 .columns.content .content-container h5 {
+                margin-bottom: 5px;
+            }
+
+        }
+
+
+
+        @media (min-width:200px) and (max-width:1200px) {
+            .important .whole-body {
+                padding: 1%;
+            }
+        }
+
+        /*donate-volunteer*/
+        .header-image {
+            background-image: url('images/Donate-Volunteer.jpg');
+            width: auto;
+            height: 460px;
+            opacity: 1;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(255, 255, 255);
+            min-height: 150px;
+            /*transform: translate3d(0px, -80.5809px, 0px);*/
+            margin-top: 2%;
+            margin-bottom: 1%;
+        }
+
+        .header-text {
+            display: flex;
+            padding: 6%;
+        }
+
+        .header-text h2 {
+            font-size: 3.5rem;
+            margin-bottom: 0;
+            color: white;
+            font-weight: 700;
+        }
+
+        .header-text p {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .header-text .donate {
+            flex: 1;
+            padding: 2%;
+            margin-top: 6%;
+        }
+
+        .header-text .volunteer {
+            flex: 1;
+            text-align: right;
+            padding: 2%;
+            margin-top: -5%;
+        }
+
+        .header-text button {
+            padding: 3%;
+            /* border: 3px solid white; */
+            border: none;
+            background-color: rgb(15, 179, 15);
+            font-weight: bolder;
+            color: white;
+            font-size: 1.009rem;
+        }
+
+        .header-text span {
+            color: rgb(15, 179, 15);
+            font-weight: bolder;
+        }
+
+        .header-text button:hover {
+            cursor: pointer;
+        }
+
+
+        @media(min-width:200px) and (max-width:1000px) {
+            .header-text {
+                flex-direction: column;
+            }
+
+            .header-image {
+                height: auto;
+                margin-top: 10%;
+            }
+
+            .header-text .volunteer {
+                margin-top: 8%;
+                margin-bottom: 5%;
+            }
+
+        }
+
+        /*donate-volunteer*/
+
+        /***COMMENT-BOX***/
+        .comment-box {
+            width: 500px;
+            padding: 2.5%;
+            margin-top: -4%;
+            margin: auto;
+            margin-top: 1%
+        }
+
+        .comment-box form textarea {
+            border: 1px solid gray;
+            border-radius: 6px;
+            padding: 4%;
+            font-size: 18px;
+        }
+
+        .comment-box form .comment-button {
+            padding: 14px 14px;
+            border: none;
+            background-color: rgb(15, 179, 15);
+            border-radius: 6px;
+            font-size: 1.2rem;
+            color: white;
+            margin-top: -3%;
+        }
+
+        @media (min-width:200px) and (max-width:1200px) {
+            .comment-box {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .comment-box form textarea {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .section-container1 .columns.content .content-container,
+            .section-container2 .columns.content .content-container,
+            .section-container3 .columns.content .content-container,
+            .section-container4 .columns.content .content-container {
+                padding: 20px 4%;
+            }
+        }
+
+        @media(min-width:250px) and (max-width:400px) {
+            .comment-box form .comment-button {
+                margin-top: -6%;
+            }
+        }
+
+        @media(min-width:700px) and (max-width:900px) {
+            .comment-box form .comment-button {
+                margin-top: -2%;
+            }
+        }
+
+        @media(min-width:900px) and (max-width:1280px) {
+            .comment-box form .comment-button {
+                margin-top: -2%;
+            }
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="top-navbar navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" style="padding-left: 5%" href="index.html">
+                <img src="images\Medlife-Foundation-Reg-Logo.png" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Home.html">Mission and Vision</a>
+                            <a class="dropdown-item" href="awards.html">Awards and Accolades</a>
+                            <a class="dropdown-item" href="financial.html">Financial and Report</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            What we do?</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="causes/sustainablemenstruation.html">Sustainable
+                                Menstruation</a>
+                            <a class="dropdown-item" href="causes/healthcare.html">Sustainable Healthcare</a>
+                            <a class="dropdown-item" href="causes/womenempowerment.html">Women Empowerment</a>
+                            <a class="dropdown-item" href="causes/child_development.html">Child Development</a>
+                            <a class="dropdown-item" href="causes/social_entrepreneurship.html">Social Entrepreneurship
+                                and
+                                Livelihood</a>
+                            <a class="dropdown-item" href="causes/new-environment.html">Environment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VolunteerForm.html">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team_section.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery/galleery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="donatebutton" href="occ.html">Donate Now</a>
+                    </li>
+                    <li>
+
+                        <form action="" class="search-bar">
+                            <input type="search" name="search" pattern=".*\S.*" required>
+                            <button class="search-btn" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section class="important">
+        <section class="whole-body">
+            <div class="top">
+
+                <h2>Mental health for elderly</h2>
+                <p>
+
+                    According to Dilip V.Jeste, Psychiast, in recent days proportion of people with mental illness in old age is rapidly increasing than the other population. As an individual become older, it is obvious that they become physically weak and develop physical illness too. As technology has a larger hand in medical field, it paved way for a longer life in older individuals. This doesn't mean that they have well mental health too. As they feel weak physically, their mental starts to degrade simultaneously. 
+                    In India many goes undiagnosed or untreated. If identified earlier, the depression or trauma or anxiety can be prevented or treated. In older people it becomes hard to find that they undergo depression. Usually they feel low or feel guilty or bad or lost interest in life, feeing tired or loss of appetite or insomnia.
+                    
+
+
+                </p>
+            </div>
+
+            <div class="section-container1">
+                <div class="columns image" style="background-image:url('images/blog20-1.jpg')">
+                    &nbsp;
+                </div>
+
+                <div class="columns content">
+                    <div class="content-container">
+                        <!-- <h5>Education</h5> -->
+                        <p>
+
+                            Older people is often worried or panicked or confused and some suffer with memory problems. Many feel useless or burden to others and few may come up with suicidal thoughts. They usually miss the past happy life, when they had good health , active mind and body, relaxing with their loved ones or gardening, doing things without the help of others.Senior citizens in India and almost in every part of the world enter into care facilities too soon. Losing all those established communities of family and friends. It is a bitter reality that sons and daughters leave their parents to care takers or homes. Studies estimates that around 728 old age homes were in India in 2021 and it is still increasing. At the age above 70, there is a chance that one in three live in care facilities. As the parents grow older, obviously they develop lots of physical illness and needs more attention. The busy life schedules of most of the children make this impossible to meet their parent’s needs and supporting them. It becomes primary duty of every children to look back the past days, where your parents, in spite of their busy schedule or poverty, they tried their best to support you on their own. 
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container2">
+                <div class="columns content">
+                    <div class="content-container">
+
+                        <p>
+                            They never made you register in care facilities or homes or hostel. As a parent their responsibility was to care their kid and now in turn , that kid’s responsibility to return all those love and care. Senior citizens are somehow grown children. They can’t do many things on their own. They struggle to carry things, or to climb steps or in some cases to eat on their own. These are all the things an individual struggled as a baby or a kid. This makes elderly, a grown kid. It becomes primary duty to return all the love which you received from them in childhood. We can help senior citizens to live at home with their families and friends and loved ones. This makes them to stay in the familiar surroundings, hanging out with familiar people, saving important memories to take with them in their last days. 
+                            he journey of taking take of your aging parents begins with a single step. It may begin with calling your dad o mom, weekly or daily , just to make sure they’re ok and also to make sure they are eating good and ask whether they’re taking their medication properly. You can also visit your parents, and recognise that they are doing fine with their neighbours and friends. 
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="columns image" style="background-image:url('images/blog20-2.jpg')">
+                    &nbsp;
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container1">
+                <div class="columns image" style="background-image:url('images/blog20-3.jpg')">
+                    &nbsp;
+                </div>
+
+                <div class="columns content">
+                    <div class="content-container">
+                        <!-- <h5>Education</h5> -->
+                        <p>
+
+                            Hanging out with your parents and visiting them often becomes easy for those who live nearby. But what with the case of distance caring of your aging parents. Aging parents usually take care of them on their own most of the time, until it becomes really difficult physically. From that point, change your yearly once visiting schedule to monthly. As days passes on, make it to weekly schedule. Don’t hesitate to spend good time with your parents. As you make weekend schedule for kids or family get together schedule or plans to enjoy with your spouse, make a schedule for visiting your parents with your whole family. Holding her grandson or granddaughter would definitely make your aging parents happy and you’re making a precious memory to take away with you after they are gone. Everyone feel sad from time to time. However these feelings are short term and last for a few days. Like any other depression, depression in elderly also last for long time severely. Over the age of 65 , one in five people undergo depression. It makes them feel down most of the time and finding hard to cope with day today activities. This becomes serious after they lose their loved ones or spouse. Present days, the rate of depression becomes larger
+
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container2">
+                <div class="columns content">
+                    <div class="content-container">
+
+                        <p>
+                            It is not the necessary part of aging but as one get older, one may go through lot of changes, like retirement, stressful life events, or medical problems. It’s normal to feel uneasy or sad after these incidents. After adjusting for a certain period, may older adults feel well again but in some cases they are not.Depression becomes the medical condition that interferes with daily life and functioning. It is not a sign of weakness. Though it’s symptoms affects the energy, appetite, sleep, work, hobbies or relationships. Many fail to recognize the symptoms of depression. And don’t reach for help. Some of the reasons why the symptoms are not overlooked are one may assume that depression is part of aging and find good reasons to underestimate it. Other reason is one may also think that isolation is also the part of aging and people around also fails to notice the distress.  Some of the symptoms are feeling overwhelmed sadness or hopelessness, losing interest in everyday activities or things which they usually enjoy doing, sleep disturbances , feeling over tired but unable to fall asleep and losing energy to get out of bed. If these symptoms last for more than two weeks, then it has to be treated.
+                       
+                        </p>
+
+                    </div>
+                </div>
+                <div class="columns image" style="background-image:url('images/blog20-4.jpg')">
+                    &nbsp;
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container1">
+                <div class="columns image" style="background-image:url('images/blog20-5.jpg')">
+                    &nbsp;
+                </div>
+
+                <div class="columns content">
+                    <div class="content-container">
+                        <!-- <h5>Education</h5> -->
+                        <p>
+                            My father have four brother, two younger and two elder. My grandfather passed away when I was a kid. My grandmother is 80 and unfortunately she is spending her life all alone in a hut. I would like to share my thoughts on what I have seen as a growing child. As one of my uncle lived in place far away from native where my grandmother lived, he won’t visit her regularly. He would come once a year. My grandma was living with her last son. Love and affection from a son is different from in-laws. My grandma had bitter experience with her in-law. Words hurt more than beatings. It seems that my grandma couldn’t bear with the harsh words and worst treatment of her in-law. So she came up with an idea of leaving that son's home. 
+                            Suddenly one day my father received a call from one of his brother that my grandma has attempted suicide to end her life. It seems that she jumped into a river with heavy water flow and fortunately police nearby has rescued her.
+                            
+
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="section-container2">
+                <div class="columns content">
+                    <div class="content-container">
+
+                        <p>
+                            They gave first aid and somehow they found the contact of one of my uncle. Police warned all the sons, and told them this should not happen again, or severe action would be taken. So my grandma decided to stay in her 4th son's home. Initially it was good, they took care of her. One day, I just went to visit my grandma. There I found her staying outside the house , in a separate cot and ate in separate plate. As a child, this shook my heart, I felt that she was treated like a animal. Even pet live inside an individual home now a days. They won’t mingle her in conversations or happy events. But I was in a situation were I couldn’t do anything. After discussion with all others brothers, they came up with the solution , to build a new living place for my grandma with all facilities and she is living there happily . Every now and then, all uncles with their family will visit my grandma. Proper medical facilities are provided weekly or monthly. Not every grandma in India receive the same care. Make sure that every basic needs of single parents should be met. 
+                            
+                            
+                            
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="columns image" style="background-image:url('images/blog20-1.jpg')">
+                    &nbsp;
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="end">
+                <!-- <h2>OUR ROLE</h2> -->
+                <p> Taking care of aging parents may be bittersweet. Well it is difficult to take care of the grown ups, but also you have a peace and contentment in caring them after you physically lose them. It is fortunate if you have a parent, you still have  a chance to make their last pages of life beautiful. 
+
+                </p>
+            </div>
+
+            
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <!-- <br> -->
+                <form action="" id="commentbox">
+                    <label for="commentbox"></label>
+                    <textarea rows="2" cols="50" name="commentbox" placeholder="comments"></textarea> <br>
+                    <br>
+                    <a href=""><button class="comment-button">Leave Comment</button></a>
+                </form>
+            </div>
+
+            <hr>
+            <div class="last">
+                <p><span class="material-icons" style="vertical-align: middle;">navigate_before</span><a
+                        href="blog19.html" style="text-decoration: none; color: black;">Previous Blog</a></p>
+
+                <p><a href="blog21.html" style="text-decoration: none; color: black;">Next Blog<span
+                            class="material-icons" style="vertical-align: middle;">navigate_next</span></a></p>
+            </div>
+            <hr>
+
+        </section>
+
+    </section>
+    <div class="header-image">
+        <div class="header-text">
+            <div class="donate">
+                <h2>Donate <span>Online!</span></h2>
+                <p>Donate to make a difference. Get 50% tax exemption on your donations and help us create a better
+                    future for India.</p>
+                <a href="occ.html" target="_blank"><button>DONATE NOW</button></a>
+                </button>
+
+
+            </div>
+            <div class="volunteer">
+                <h2>Become a <span>Volunteer</span></h2>
+                <p>Medlife Foundation volunteers are self-motivated people of all ages and from different walks of life
+                    who give of their time and resources to make positive difference in the lives of children.</p>
+                <a href="VolunteerForm.html" target="_blank"> <button>JOIN TODAY</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <h1 style="font-weight: bolder;"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Join our community
+        </h1>
+        <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+        <input style="margin-top: 5px;" class="subscribebtn" value="Subscribe Now!" type="submit">
+    </div><br>
+
+    
+   <!-- topbutton  -->
+   <div id="topbtn">
+    <a href="#" style="color:white"><i class="fa fa-arrow-up" aria-hidden="true"></i> </a>
+</div>
+<!-- topbutton  -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331;width: 100%;">
+
+            <!-- Section: Links  -->
+            <section class="" style="padding:1%;">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Medlife Foundation</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Medlife Foundation strives to work towards finding Effective Healthcare Solutions to the
+                                problems
+                                faced by people who are not privileged by spreading awareness on Sustainable
+                                Menstruation and
+                                Development of Children belonging to a weaker section of society. ....<br>
+                                <a href="timeline.html">Learn more</a>
+                            </p>
+
+
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">Quick links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="timeline.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp About us</a>
+                            </p>
+
+                            <!-- <p>
+                                <a href="#portfolio" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp What we do?</a>
+                            </p> -->
+                            <p>
+                                <a href="occ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Donate</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Contact us</a>
+                            </p>
+                            <p>
+                                <a href="FAQ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    FAQ</a>
+                            </p>
+                            <p>
+                                <a href="gallery/media.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Media</a>
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px;">
+
+                            <p>
+                                <a href="career.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Career</a>
+                            </p>
+                            <!-- <p>
+                                <a href="#!" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>
+                                    Gallery</a>
+                            </p> -->
+                            <p>
+                                <a href="partnersandsupporters.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Partners &
+                                    supporters</a>
+                            </p>
+                            <p>
+                                <a href="InternshipForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Apply for Internship</a>
+                            </p>
+                            <p>
+                                <a href="corporatepartnership.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Corporate partnership</a>
+                            </p>
+                            <p>
+                                <a href="VolunteerForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Be a Volunteer</a>
+                            </p>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p> <a href="tel:827-532-0465" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Bhushan :+91 82753 20465</a></p>
+
+                            <p><a href="tel:997-005-4699" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Sandeep : +91 99700 54699</a></p>
+                            <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Dr.Bhushan : +91 93073 99492</a></p>
+                            <!-- <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i> Dr.Bhushan : +91 93073 99492</a></p>                  -->
+                            <p><a href="mailto:info@medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-envelope mr-3"></i>&nbsp
+                                    info@medlifefoundation.org</a> </p>
+                            <p><a href="www.medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-globe"></i>&nbsp
+                                    www.medlifefoundation.org</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Copyright -->
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <p>SHOW US SOME &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>&nbsp; ON SOCIAL
+                    MEDIA</p>
+
+                <div id="socialicon">
+                    <a href="https://www.facebook.com/medlifefoundationbahal" target="_blank" class="text-white">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/Med_foundation" target="_blank" class="text-white">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="Home.html" target="_blank" class="text-white">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/medlifefoundation/" target="_blank" class="text-white ">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/MedlifeFoundation" target="_blank" class="text-white">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/medlife-foundation" target="_blank" class="text-white ">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                </div><br>
+                © 2016-2022 Copyright:&nbsp;
+                <a class="text-white" href="index.html">Medlifefoundation </a>|
+                <a class="text-white" href="privacy.html">Privacy Policy</a>|
+                <a class="text-white" href="terms.html">Terms & Conditions</a>|
+                <a class="text-white" href="refund.html">Refund Policy</a>
+
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- scriptlinks -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

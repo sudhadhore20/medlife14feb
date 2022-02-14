@@ -1,0 +1,861 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width,scale=1.0">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <!-- <link rel="stylesheet" href="navfoot.css"> -->
+    <!-- <script src="main.js"></script> -->
+    <title>corporate partnership</title>
+
+    <style>
+        /* navbar */
+        .top-navbar {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+            font-size: 20px;
+            transition: .5s ease-in-out;
+        }
+
+        .nav-item a {
+            font-size: large;
+            color: black;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            padding-right: 10px;
+        }
+
+        .navbar-brand img {
+            width: 230px;
+            height: 70px;
+        }
+
+        .navbar-expand-lg .navbar-nav .dropdown-menu {
+            border: none;
+            /* background: transparent; */
+        }
+
+        
+    /* Subscribe */
+
+.subscribe{
+  text-align: center;
+  padding: 20px;
+}
+.subscribebtn:hover{
+  background-color:#0f9c0f;
+  border: none;
+}
+
+.subscribebtn{
+  background-color:rgb(15,179,15);
+  color: white;
+  border: none;
+}
+.inptfld{
+  border-radius: 20px;
+  padding: 5px;
+  width: 20%;
+
+}
+ .subscribebtn{
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+}
+.footer #socialicon .text-white {
+    margin-right: 0.5rem;
+}
+.footer #socialicon i{
+    font-size:large;
+}
+
+@media(max-width:800px){
+  
+    .navbar-light .navbar-nav .nav-link {
+      color: #000000;
+      font-size: 1rem;
+      padding-left: 5px;
+      transition: .5s ease-in-out;
+    }
+    
+    .nav-item a {
+      font-size: 0.9rem;
+      color: black;
+     
+    }
+        .subscribe .inptfld
+        {
+          width: 50%;
+          height: 50px;
+        }
+        
+        .subscribe .subscribebtn{
+          width:fit-content;
+          height: 50px;
+        }
+  }
+        .image img {
+            width: 100%;
+        }
+
+        #donatebutton {
+            background-color: rgb(15, 179, 15);
+            width: fit-content;
+            color: honeydew;
+            border-radius: 10px;
+            margin-left: 8px;
+            padding-right: 8px;
+        }
+
+        #donatebutton:hover {
+            /* background-color: #7bdb7b; */
+            box-shadow: 0px 10px 10px #0f9c0f;
+        }
+
+        button,
+        input {
+            /* font: 1em Hind, sans-serif; */
+            line-height: 1.5em;
+        }
+
+        input {
+            color: #171717;
+        }
+
+        .search-bar {
+            display: flex;
+        }
+
+        .search-bar input,
+        .search-btn,
+        .search-btn:before,
+        .search-btn:after {
+            transition: all 0.25s ease-out;
+        }
+
+        .search-bar input,
+        .search-btn {
+            width: 3em;
+            height: 3em;
+        }
+
+        .search-bar input:invalid:not(:focus),
+        .search-btn {
+            cursor: pointer;
+        }
+
+        .search-bar,
+        .search-bar input:focus,
+        .search-bar input:valid {
+            width: 100%;
+        }
+
+        .search-bar input:focus,
+        .search-bar input:not(:focus)+.search-btn:focus {
+            outline: transparent;
+        }
+
+        .search-bar {
+            /* margin: auto; */
+            /* padding: 1.5em; */
+            /* justify-content: center; */
+            max-width: 12em;
+        }
+
+        .search-bar input {
+            background: transparent;
+            border-radius: 1.5em;
+            box-shadow: 0 0 0 0.4em #171717 inset;
+            padding: 0.75em;
+            margin-left: 5px;
+            transform: translate(0.5em, 0.5em) scale(0.5);
+            transform-origin: 100% 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .search-bar input::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        .search-bar input:focus,
+        .search-bar input:valid {
+            background: #fff;
+            border-radius: 0.375em 0 0 0.375em;
+            box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+            transform: scale(1);
+        }
+
+        .search-btn {
+            background: #171717;
+            border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+            padding: 0.75em;
+            position: relative;
+            transform: translate(0.25em, 0.25em) rotate(45deg) scale(0.25, 0.125);
+            transform-origin: 0 50%;
+        }
+
+        .search-btn:before,
+        .search-btn:after {
+            content: "";
+            display: block;
+            opacity: 0;
+            position: absolute;
+        }
+
+        .search-btn:before {
+            border-radius: 50%;
+            box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+            top: 0.75em;
+            left: 0.75em;
+            width: 1.2em;
+            height: 1.2em;
+        }
+
+        .search-btn:after {
+            background: #f1f1f1;
+            border-radius: 0 0.25em 0.25em 0;
+            top: 51%;
+            left: 51%;
+            width: 0.75em;
+            height: 0.25em;
+            transform: translate(0.2em, 0) rotate(45deg);
+            transform-origin: 0 50%;
+        }
+
+        .search-btn span {
+            display: inline-block;
+            overflow: hidden;
+            width: 1px;
+            height: 1px;
+        }
+
+        /* Active state */
+        .search-bar input:focus+.search-btn,
+        .search-bar input:valid+.search-btn {
+            background: rgb(15, 179, 15);
+            border-radius: 0 0.375em 0.375em 0;
+            transform: scale(1);
+        }
+
+        .search-bar input:focus+.search-btn:before,
+        .search-bar input:focus+.search-btn:after,
+        .search-bar input:valid+.search-btn:before,
+        .search-bar input:valid+.search-btn:after {
+            opacity: 1;
+        }
+
+        .search-bar input:focus+.search-btn:hover,
+        .search-bar input:valid+.search-btn:hover,
+        .search-bar input:valid:not(:focus)+.search-btn:focus {
+            background: rgb(15, 179, 15);
+        }
+
+        .search-bar input:focus+.search-btn:active,
+        .search-bar input:valid+.search-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* @media screen and (prefers-color-scheme: dark) {
+
+            .search-bar input {
+                box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+            }
+
+            .search-bar input:focus,
+            .search-bar input:valid {
+                background: #3d3d3d;
+                box-shadow: 0 0 0 0.1em #3d3d3d inset;
+            }
+
+            .search-btn {
+                background: #f1f1f1;
+            }
+        } */
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .but {
+            /* border: 2px solid red; */
+            padding: 10px;
+            color: #fff;
+        }
+
+        .but button {
+            /* background-color: hotpink; */
+            background-color: rgb(15,179,15);
+        }
+
+        .far {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-family: sans-serif;
+        }
+
+        .dd {
+            text-align: center;
+            font-size: 20px;
+            color: #555;
+            flex-basis: 90%;
+            padding: 20px;
+            /* box-shadow: 0px 0px 5px #555; */
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .legal {
+            /* border: 2px solid red; */
+            margin: 10px auto 30px;
+            font-size: 20px;
+            color: #555;
+            /* text-align: center; */
+            padding: 10px 20px 20px 10px;
+        }
+
+        .legal h3 {
+            text-align: left;
+            /* border: 2px solid red; */
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .add .dd {
+            box-shadow: 0px 0px 5px #555;
+        }
+
+        .add {
+            margin-bottom: 10px;
+        }
+
+
+        @media (max-width: 568px) {
+            .dd {
+                width: 90%;
+                margin: auto;
+                ;
+                margin-top: 20px;
+            }
+
+            .far .dd {
+                font-size: 20px;
+            }
+
+            .far {
+                display: inline-block;
+                width: 100%;
+            }
+
+            /* .legal{
+        font-size: 17 ;
+         padding: 10px;
+      } */
+            .add .dd {
+                font-size: 20px;
+                margin-top: 0px;
+            }
+        }
+
+        
+ /*donate-volunteer*/
+ .header-image {
+  background-image: url('images/Donate-Volunteer.jpg');
+  width: auto;
+  height: 460px;
+  opacity: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  min-height: 150px;
+  /*transform: translate3d(0px, -80.5809px, 0px);*/
+  margin-top: 2%;
+            margin-bottom: 1%;
+}
+
+.header-text {
+  display: flex;
+  padding: 6%;
+}
+
+.header-text h2 {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  color: white;
+  font-weight:700;
+}
+
+.header-text p {
+  color: white;
+  font-size: 1.3rem;
+}
+.header-text .donate {
+    flex: 1;
+    padding: 2%;
+    margin-top: 6%;
+}
+
+.header-text .volunteer {
+    flex: 1;
+    text-align: right;
+    padding: 2%;
+    margin-top: -5%;
+}
+ 
+.header-text button {
+  padding: 3%;
+  /* border: 3px solid white; */
+  background-color: rgb(15, 179, 15);
+  color: white;
+  font-weight: bolder;
+  border: none;
+  font-size: 1.009rem;
+}
+.header-text span{
+  color:rgb(15, 179, 15);
+  font-weight: bolder;
+}
+
+.header-text button:hover{
+  cursor: pointer;
+}
+
+
+@media(min-width:200px) and (max-width:1000px){
+  .header-text{
+      flex-direction: column;   
+  }
+  .header-image{
+      height:auto;
+      margin-top:10%;
+  }
+  
+  .header-text .volunteer{
+      margin-top:8%;
+      margin-bottom: 5%;
+  }
+  
+}
+/*donate-volunteer*/
+
+
+#topbtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  background-color: rgb(15, 179, 15);
+  cursor: pointer;
+  padding:10px 10px;
+  border-radius: 50%;
+}
+
+
+
+/* 
+@media screen and (max-device-width: 800px){
+
+  #topbtn {
+    font-size: 1rem;
+  }
+} */
+ 
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="top-navbar navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" style="padding-left: 5%" href="index.html">
+                <img src="images\Medlife-Foundation-Reg-Logo.png" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Home.html">Mission and Vision</a>
+                            <a class="dropdown-item" href="awards.html">Awards and Accolades</a>
+                            <a class="dropdown-item" href="financial.html">Financial and Report</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            What we do?</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="causes/sustainablemenstruation.html">Sustainable
+                                Menstruation</a>
+                            <a class="dropdown-item" href="causes/healthcare.html">Sustainable Healthcare</a>
+                            <a class="dropdown-item" href="causes/womenempowerment.html">Women Empowerment</a>
+                            <a class="dropdown-item" href="causes/child_development.html">Child Development</a>
+                            <a class="dropdown-item" href="causes/social_entrepreneurship.html">Social Entrepreneurship
+                                and
+                                Livelihood</a>
+                            <a class="dropdown-item" href="causes/new-environment.html">Environment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VolunteerForm.html">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team_section.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery/galleery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="donatebutton" href="occ.html">Donate Now</a>
+                    </li>
+                    <li>
+
+                        <form action="" class="search-bar">
+                            <input type="search" name="search" pattern=".*\S.*" required>
+                            <button class="search-btn" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="image">
+        <img src="images/Corporate Partnership.png" alt="" srcset="">
+    </div>
+
+    <br>
+    <section>
+        <h1>CORPORATE PARTNERSHIP</h1>
+
+        <div class="far">
+            <div class="dd">
+
+
+                <!-- <h1 style="text-align: center;">CORPORATE PARTNERSHIP</h1>  -->
+                <p>
+                    Medlife Foundation has been a Great Example for Growth and Improvement through promotion of
+                    Sustainable Menstruation and Healthcare. <br>
+                    As a Non- Profitable Organization, we have organized Various Events, Online Programs and Health
+                    Check-up Camps with Various Health Dive Campaigns with the support and efforts of our Volunteers,
+                    Interns, Supporters and The Donations due to their Cooperation and we are thankful for it. <br>
+                    We are taking a step-forward towards the Spread of Sustainable Healthcare and for it we are ready to
+                    take a Step to initiate Corporate Partnerships with our NGO to make this Initiative successful and
+                    develop it and spread this drive of Sustainability in Healthcare and Menstruation all over India.
+                    <br>
+                    Corporate partnerships are usually collaborations with a short timeline and very focused objectives
+                    – events, campaigns, programmes or projects, where the key business of the corporate enterprise, and
+                    the work area of the NGO, converge.
+                </p>
+
+
+            </div>
+        </div>
+
+        <div class="legal">
+
+            <h3 style="font-weight: bold; font-size: 30px; color: #222;">How We Help</h3>
+
+
+            <ul>
+                <li>Ensuring the alliance is effective and successful. Sound documentation and knowledge of regulation
+                    safeguards the interest of the corporate foundation and the non-profit.</li>
+
+                <li>Identification & Due Diligence – Assist in identifying suitable and credible NGO partners that meet
+                    CSR criteria. Due diligence of implementing nonprofits.</li>
+
+                <li>Documentation Drafting & Review – Advise and guide in drafting grant agreements, the terms of
+                    reference (TOR) and memorandum of understanding (MOU) between the corporate foundation & NGO
+                    partners</li>
+
+                <li>Compliance for Partnerships – Non-applicability of TDS and GST on CSR grants and other compliance
+                    necessities.</li>
+
+                <p style="color: #222; text-align: center; ;
+         padding: 10">We look forward for New Ideas, Initiatives and Collaborations in the upcoming time.</p>
+
+            </ul>
+
+        </div>
+
+        <div class="add">
+            <div class="far">
+                <div class="dd">
+                    <h3 style="color: #222; font-size: 30px; font-weight: bold;">Contact Us</h3>
+                    If there are any questions regarding this Corporate Partnerships, you may contact us using the
+                    information below. <br>
+
+                    Medlife House <br>
+                    House.no-693, At/Post: Bahal, <br>
+                    Tal: Chalisgaon Dist: Jalgaon <br>
+                    Maharashtra, India - 424106 <br>
+                    Mob: +91 8275320465 <br>
+                    Mob: +91 7020438881 <br>
+                    info@medlifefoundation.org <br>
+                    www.medlifefoundation.org <br>
+                </div>
+            </div>
+        </div>
+    </section>
+<br><br>
+
+    
+  <div class="header-image">
+    <div class="header-text">
+        <div class="donate">
+            <h2>Donate <span>Online!</span></h2>
+            <p>Donate to make a difference. Get 50% tax exemption on your donations and help us create a better
+                future for India.</p>
+            <a href="../occ.html" target="_blank"><button>DONATE NOW</button></a>
+            </button>
+
+
+        </div>
+        <div class="volunteer">
+            <h2>Become a <span>Volunteer</span></h2>
+            <p>Medlife Foundation volunteers are self-motivated people of all ages and from different walks of life
+                who give of their time and resources to make positive difference in the lives of children.</p>
+            <a href="../VolunteerForm.html"target="_blank">  <button>JOIN TODAY</button></a>
+        </div>
+    </div>
+</div>
+
+
+    <div class="subscribe">
+        <h1 style="font-weight: bolder;"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Join our community
+        </h1>
+        <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+        <input style="margin-top: 5px;" class="subscribebtn" value="Subscribe Now!" type="submit">
+    </div><br>
+       <!-- topbutton  -->
+       <div id="topbtn">
+        <a href="#" style="color:white"><i class="fa fa-arrow-up" aria-hidden="true"></i> </a>
+    </div>
+    <!-- topbutton  -->
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331;width: 100%;">
+
+            <!-- Section: Links  -->
+            <section class="" style="padding:1%;">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Medlife Foundation</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Medlife Foundation strives to work towards finding Effective Healthcare Solutions to the
+                                problems
+                                faced by people who are not privileged by spreading awareness on Sustainable
+                                Menstruation and
+                                Development of Children belonging to a weaker section of society. ....<br>
+                                <a href="timeline.html">Learn more</a>
+                            </p>
+
+
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase fw-bold">Quick links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="timeline.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp About us</a>
+                            </p>
+
+                            <!-- <p>
+                            <a href="#portfolio" class="text-white"><i class="fa fa-arrow-circle-right"
+                                    aria-hidden="true"></i>&nbsp What we do?</a>
+                        </p> -->
+                            <p>
+                                <a href="occ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Donate</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp Contact us</a>
+                            </p>
+                            <p>
+                                <a href="FAQ.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    FAQ</a>
+                            </p>
+                            <p>
+                                <a href="gallery/media.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Media</a>
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px;">
+
+                            <p>
+                                <a href="career.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Career</a>
+                            </p>
+                            <!-- <p>
+                            <a href="#!" class="text-white"><i class="fa fa-arrow-circle-right"
+                                    aria-hidden="true"></i>
+                                Gallery</a>
+                        </p> -->
+                            <p>
+                                <a href="partnersandsupporters.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Partners &
+                                    supporters</a>
+                            </p>
+                            <p>
+                                <a href="InternshipForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Apply for Internship</a>
+                            </p>
+                            <p>
+                                <a href="corporatepartnership.html" class="text-white"><i
+                                        class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp
+                                    Corporate partnership</a>
+                            </p>
+                            <p>
+                                <a href="VolunteerForm.html" class="text-white"><i class="fa fa-arrow-circle-right"
+                                        aria-hidden="true"></i>&nbsp
+                                    Be a Volunteer</a>
+                            </p>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p> <a href="tel:827-532-0465" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Bhushan :+91 82753 20465</a></p>
+
+                            <p><a href="tel:997-005-4699" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Mr.Sandeep : +91 99700 54699</a></p>
+                            <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i>
+                                    Dr.Bhushan : +91 93073 99492</a></p>
+                            <!-- <p><a href="tel:930-739-9492" style="color: white;"><i class="fa fa-phone mr-3"></i> Dr.Bhushan : +91 93073 99492</a></p>                  -->
+                            <p><a href="mailto:info@medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-envelope mr-3"></i>&nbsp
+                                    info@medlifefoundation.org</a> </p>
+                            <p><a href="www.medlifefoundation.org" style="color: white;"><i
+                                        class="fa fa-globe"></i>&nbsp
+                                    www.medlifefoundation.org</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Copyright -->
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <div id="socialicon">
+                    <p>SHOW US SOME &nbsp;<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>&nbsp; ON
+                        SOCIAL MEDIA</p>
+
+                    <a href="https://www.facebook.com/medlifefoundationbahal" target="_blank" class="text-white">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/Med_foundation" target="_blank" class="text-white">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="Home.html" target="_blank" class="text-white">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="https://www.instagram.com/medlifefoundation/" target="_blank" class="text-white ">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/MedlifeFoundation" target="_blank" class="text-white">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/medlife-foundation" target="_blank" class="text-white ">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+
+                </div><br>
+                © 2016-2022 Copyright:&nbsp;
+                <a class="text-white" href="index.html">Medlifefoundation </a>|
+                <a class="text-white" href="privacy.html">Privacy Policy</a>|
+                <a class="text-white" href="terms.html">Terms & Conditions</a>|
+                <a class="text-white" href="refund.html">Refund Policy</a>
+
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- scriptlinks -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
